@@ -54,15 +54,3 @@ section#content { margin:0 auto; width:960px; padding:20px 0px; }
 h1 { font-size:48px; font-weight:bold; color:black; text-align:center; }
 h2 { font-size:36px; font-weight:bold; color:black; text-align:center; }
 p { padding-bottom:10px; }
-
-#wrap {
-    float: left;
-    position: relative;
-    left: 50%;
-}
-
-#content {
-    float: left;
-    position: relative;
-    left: -50%;
-}
