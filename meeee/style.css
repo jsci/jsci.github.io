@@ -48,9 +48,13 @@ table {
 }
 
 /* Add Styles Here */
-body { font-family:Times; font-size:14px; }
+body { font-family:Helvetica; font-size:14px; }
 section#content { margin:0 auto; width:960px; padding:20px 0px; }
 
 h1 { font-size:48px; font-weight:bold; color:black; text-align:center; }
 h2 { font-size:36px; font-weight:bold; color:black; text-align:center; }
 p { padding-bottom:10px; text-align:justify;}
+
+img.align-left {
+	float: left;
+	margin-right: 10px;}
