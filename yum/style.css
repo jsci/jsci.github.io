@@ -55,4 +55,8 @@ table {
 
 h1 {color: yellow;
 	font-size: 20px;
-	text-decoration: black-stroke}
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;}
