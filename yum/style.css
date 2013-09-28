@@ -53,6 +53,6 @@ table {
 
 /* END RESET */
 
-h1 {color: yellow;
+h1 {color: #FFCC00;
 	font-size: 50px;
-	text-decoration: underline}
+	text-decoration: none;}
