@@ -53,6 +53,80 @@ table {
 
 /* END RESET */
 
-h1 {color: #FFCC00;
-	font-size: 50px;
-	text-decoration: none;}
+
+#banner {
+	font-family: Helvetica;
+	width: 470px;
+	padding: 45px 100px;
+	margin: -20px 0px 20px 30px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: black;
+	font-size: 20px;
+	border-radius: 25px;
+	letter-spacing: 0.07em;
+	line-height: 2em;
+}
+
+#banner h4 {
+	font-size: 10px;
+}
+
+
+li {
+	font-family: Garamond;
+	line-height: 1.5em;
+	font-size: 12px;
+}
+
+
+#directions li{	
+	list-style: decimal;
+}
+
+
+#directions {
+	width: 400px;
+	margin-right: 60px;
+	margin-left: 70px;
+	float: left;
+}
+
+
+h4 {
+	font-size: 15px;
+	font-family: Helvetica;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.025em;
+	line-height: 2em;
+}
+
+
+#ingredients {
+	width: 200px;
+	list-style: none;
+	float: left;
+	margin-right: 100px; 
+}
+
+
+#extra li{
+	float: left;
+	width: 150px;
+	text-align: center;
+	font-family: Helvetica;
+	background-color: black;
+	padding: 5px 7px;
+	margin: 5px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+
+
