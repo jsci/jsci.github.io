@@ -109,6 +109,7 @@ li {
 	font-size: 20px;
 }
 
+
 #dogs {
 	float; left;
 	width: 400px;
@@ -121,7 +122,6 @@ li {
 }
 
 footer {
-	float:left;
 	border-top: 3px solid black;
 	padding-bottom: 10px;
 }
