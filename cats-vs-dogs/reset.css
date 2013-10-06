@@ -49,37 +49,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/*  END RESET */
 
 
-/* Center Content */
-
-.centered { 
-  margin:0 auto;
-  width:960px;
-}
-
-
-/* Clearfix */
-.clearfix:after {
-	content: ".";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	line-height: 0;
-	height: 0;
-}
- 
-.clearfix { display: inline-block; }
-html[xmlns] .clearfix { display: block; }
-* html .clearfix { height: 1%; }
-
-#site-header h1 a {
- display:block;  
- width:300px; 
- height:80px;  
- background:url(images/logo.png) no-repeat center; 
- text-indent:-9999px;
- }
 
 body {
 	font-size: 15px;
@@ -97,9 +69,11 @@ h1 {
 	line-height: 1.5em;
 }
 
+
 li {
 	list-style: none;
 	float: left;
+	text-align: center;
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 1px;
@@ -112,18 +86,22 @@ li {
 
 #dogs {
 	float; left;
-	width: 400px;
+	max-width: 400px;
+	margin: 10px;
+	clear: both;
 }
 
 
 #cats {
-	float:left;
-	width: 400px;
+	float: left;
+	max-width: 400px;
+	margin: 10px;
 }
 
 footer {
 	border-top: 3px solid black;
 	padding-bottom: 10px;
+	clear: both;
 }
 
 footer a {
