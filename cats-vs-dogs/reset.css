@@ -121,16 +121,16 @@ li {
 
 #dawgs {
 	float: left;
-	max-width: 350px;
-	margin: 10px;
+	max-width: 320px;
+	margin: 20px;
 	clear: both;
 }
 
 
 #kats {
 	float: left;
-	max-width: 350px;
-	margin: 10px;
+	max-width: 320px;
+	margin: 20px;
 }
 
 footer {
