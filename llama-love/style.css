@@ -53,6 +53,13 @@ table {
 
 /* END RESET */
 
+#main-content {
+	position:relative;
+		height: 300px;
+		left:5%;
+		margin: 5%;
+}
+
 h1 {font-size: 26px;
 	font-weight: bold;
 	font-family: Helvetica;
@@ -66,26 +73,27 @@ h2 {font-size: 12px;
 	}
 
 
-p {font-size:13px;
+p {font-size: 12px;
 	font-family: Helvetica;
 	line-height: 1.3em;
+	padding-bottom: 1em;
 	}
 
 img {
 	width: 200px;
 	float:left;
 	margin-right: 20px;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 	}
 
 #llama-left{
 	float: left;
-	width: 500px;
+	width: 430px;
 	margin: 20px;
 	}
 
 #llama-right{
 	float: left;
-	width: 500px;
+	width: 430px;
 	margin: 20px;
 	}

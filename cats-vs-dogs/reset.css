@@ -73,17 +73,21 @@ table {
 html[xmlns] .clearfix { display: block; }
 * html .clearfix { height: 1%; }
 
+
+
 #site-header h1 a {
  display:block;  
  width:445px; 
  height:95px;  
- background:url(images/dogvscat-logo.gif) no-repeat center; 
+ background:url(images/dogvscat-logo.gif) no-repeat; 
  text-indent:-9999px;
  margin: 30px;
  }
 
 
 body {
+	position: relative;
+		left: 5%;
 	font-size: 15px;
 	line-height: 1em;
 	margin-left: 50px;
@@ -98,6 +102,13 @@ header img {
 	margin-top: 20px;
 }
 
+header {
+	position: relative;
+	height: 95px;
+	left: 27%;
+}
+
+
 h1 {
 	font-size: 25px;
 	font-weight: bold;
@@ -106,7 +117,6 @@ h1 {
 
 
 li {
-	list-style: none;
 	float: left;
 	text-align: center;
 	text-transform: uppercase;
@@ -117,28 +127,65 @@ li {
 	border-top: 3px solid black;
 	border-bottom:3px solid black;
 	font-size: 20px;
+	list-style-type: disc;
+}
+
+.first {
+	list-style: none;
 }
 
 
+nav {
+	position: absolute;
+	left: 20%;
+}
+
+
+section {
+	position: absolute;
+		top: 120%;
+		left: 20%;
+		font-size: 15px;
+		line-height: 1.2em;
+}
+
 #dawgs {
 	float: left;
-	max-width: 320px;
-	margin: 20px;
+	max-width: 290px;
+	margin: 30px;
 	clear: both;
 }
 
 
 #kats {
 	float: left;
-	max-width: 320px;
-	margin: 20px;
+	max-width: 290px;
+	margin: 30px;
 }
 
 footer {
-	border-top: 3px solid black;
-	width: 60%;
+	position: relative;
+		height: 40px;
+		top: 450px;
+		left: 22%;
 	padding-bottom: 10px;
 	clear: both;
+	font-size: 13px;
+	}
+
+#wiki {
+	float:left;
+	text-align: left;
+	width: 460px;
+	padding-top: 15px;
+	border-top: 3px solid black;
+}
+
+#copyright {
+	float:left;
+	text-align: right;
+	padding-top: 15px;
+	border-top: 3px solid black;
 }
 
 footer a {

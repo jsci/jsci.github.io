@@ -89,9 +89,9 @@ li {
 
 
 #directions {
-	width: 400px;
-	margin-right: 60px;
-	margin-left: 70px;
+	width: 300px;
+	margin-right: 100px;
+	margin-left: 90px;
 	float: left;
 }
 
@@ -105,16 +105,39 @@ h4 {
 	line-height: 2em;
 }
 
+#ingredients h4 {
+	margin-left: 51px;
+}
+
 
 #ingredients {
 	width: 200px;
 	list-style: none;
 	float: left;
-	margin-right: 100px; 
+	margin-right: 90px; 
+}
+
+#units li {
+	font-family: Helvetica;
+	font-size: 12px;
+}
+
+#units {
+	list-style: none;
+	float: left;
+	text-align: right;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+#food {
+	list-style: none;
+	float: left;
+	text-align: left;
 }
 
 
-#extra li{
+#extra li {
 	float: left;
 	width: 150px;
 	text-align: center;
@@ -124,7 +147,7 @@ h4 {
 	margin: 5px;
 }
 
-a {
+#extra a {
 	text-decoration: none;
 	color: white;
 }
