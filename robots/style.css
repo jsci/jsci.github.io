@@ -50,3 +50,172 @@ table {
 	border-spacing: 0;
 }
 
+
+
+#site-header h1 a {
+ display:block;  
+ width:306px; 
+ height:123px;  
+ background:url(images/logo.png) no-repeat; 
+ text-indent:-9999px;
+ margin: 30px;
+ }
+
+
+ body {
+	font-family: 12px;
+	font-family: Helvetica;
+}
+
+p {
+	font-size: .8em;
+	line-height: 1.5em;
+	padding-bottom: 10px;
+	}
+
+li {
+	float: left;
+	list-style: none;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+li a {
+	text-decoration: none;
+
+}
+
+#site-wrapper {
+	position: relative;
+	height: 100px;
+	width: 70%;
+	background-color: #ecf2d3;
+}
+
+#top-nav {
+	position: absolute;
+		right: 30%;
+	color: #744918;
+	margin-top: 10px;
+}
+
+#top-nav a {
+	color: color: #744918;
+	text-decoration: none;
+}
+
+#menu-wrapper {
+	position: absolute;
+	width: 100%;
+	height: 30px;
+	background-color: #744918;
+	}
+
+#main-menu {
+	position: absolute;
+		top: 30%;
+		left: 10%;
+	background-color: #ecf2d3
+}
+
+#main-menu li {
+	padding-top: 8px;
+	float:left;
+}
+
+#main-menu li a {
+	color: white;
+	text-transform: uppercase;
+	padding-right: 30px;
+	font-weight: bold;
+}
+
+#content-wrapper {
+	position: relative;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	padding: 30px 15px 15px 0px;
+	width: 100%;
+	background-color: #fff;
+}
+
+#content {
+	position: absolute;
+	width: 70%;
+}
+
+#content h1 {
+	font-size: 15px;
+}
+
+#content h1, h2 {
+	color: #744918;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-bottom: 12px;
+}
+
+#page {
+	float: left;
+	width: 50%;
+	margin-right: 20%;
+}
+
+#sidebar h1 {
+	font-size: 1em;
+}
+
+#sidebar ul {
+	padding-bottom: 10px;
+}
+
+#sidebar a {
+	font-size: .5em;
+	color: #744918;
+}
+
+#site-footer {
+	position: relative;
+	width: 70%;
+}
+
+#footer-wrapper {
+	position: relative;
+	width: 100%;
+	background-color: #875c33;
+	height: 120px;
+	margin-top: 100px;
+}
+
+#footer-wrapper h1 {
+	color: #ecf2d3;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#footer-contact {
+	float: left;
+	width: 15%;
+	padding-top: 10px;
+}
+
+#footer-contact p {
+	color: white;
+}
+
+#footer-follow {
+	float: right;
+	width: 30%;
+	padding-top: 12px;
+	margin: auto;
+}
+
+#footer-follow li a {
+	float: left;
+}
+
+
+
+
