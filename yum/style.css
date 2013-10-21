@@ -53,10 +53,15 @@ table {
 
 /* END RESET */
 
-
+body {
+	margin: 0 auto;
+	width: 960px;
+}
 
 #banner {
 	font-family: Helvetica;
+	position: relative;
+		height: 70px;
 	width: 470px;
 	padding: 45px 100px 35px 100px;
 	margin: -20px 0px 20px 30px;
@@ -89,10 +94,10 @@ li {
 
 
 #directions {
+	position: absolute;
+		top: 150px;
+		left: 250px;
 	width: 300px;
-	margin-right: 100px;
-	margin-left: 90px;
-	float: left;
 }
 
 
@@ -111,10 +116,11 @@ h4 {
 
 
 #ingredients {
+	position: absolute;
+		top: 150px;
+		left: 635px;
 	width: 200px;
 	list-style: none;
-	float: left;
-	margin-right: 90px; 
 }
 
 #units li {
@@ -136,6 +142,11 @@ h4 {
 	text-align: left;
 }
 
+#extra {
+	position: absolute;
+		top: 550px;
+		left: 250px;
+}
 
 #extra li {
 	float: left;
