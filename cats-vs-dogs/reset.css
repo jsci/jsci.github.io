@@ -182,6 +182,7 @@ nav {
 
 section {
 	float: left;
+		width: 700px;
 		margin-top: 8%;
 		margin-left: 13%;
 		display: inline-block;
