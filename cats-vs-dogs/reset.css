@@ -86,7 +86,6 @@ html[xmlns] .clearfix { display: block; }
          url('leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 
@@ -98,12 +97,25 @@ html[xmlns] .clearfix { display: block; }
 }
 
 
-h1 {
+#dogs {
 	font-family: "league_gothicregular", Georgia, serif, bold;
 	font-size: 115px;
 	padding-top: 30px;
 	text-transform: uppercase;
-	float: left;
+	position: absolute;
+		top: 5%;
+		left: 2%;
+	letter-spacing: .01em;
+}
+
+#cats {
+	font-family: "league_gothicregular", Georgia, serif, bold;
+	font-size: 115px;
+	padding-top: 30px;
+	text-transform: uppercase;
+	position: absolute;
+		top: 5%;
+		left: 30%;
 	letter-spacing: .01em;
 }
 
@@ -113,18 +125,24 @@ h1 {
 	font-style: italic;
 	font-size: 55px;
 	color: #ccc;
-	border-top: double 5px #ccc;
-	border-bottom: double 5px #ccc;
-	outline-top: solid 5px #ccc;
-	outline-bottom:	solid 1px #ccc;
-	padding-top: 10px;
-	padding-bottom: 20px;
+	position: absolute;
+		top: 40%;
+		left: 20%;
 	margin-left: 15px;
 	margin-right: 15px;
-	margin-top: 10px;
-	float:left;
 }
 
+
+#thick {
+	border-top: solid 4px #ccc;
+	border-bottom: solid 4px #ccc;
+	padding: 4px 0px 3px 0px;
+}
+
+#thin {
+	border-top: solid 1px #ccc;
+	border-bottom: solid 1px #ccc;
+}
 
 body {
 	margin: 0 auto;
