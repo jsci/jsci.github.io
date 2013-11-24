@@ -173,9 +173,11 @@ p {
 	float: left;
 }
 
-h3
+h3 {
+	font-size: 1.5em;
+	line-height: 1.2em;
+}
 
-h4
 
 
 /* Index
@@ -218,15 +220,44 @@ h4
 .food {
 	float: left;
 	width: 65%;
+	margin-bottom: 5%;
 }
 
 #questions {
-	margin-top: 10%;
-	margin-bottom: 10%; 
+	font-size: 1em;
 }
 
 
 
+/* Location
+------------------------------------ */
+
+.titles {
+	color: red;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	font-size: 14px;
+	float: left;
+	width: 35%;
+}
+
+.information {
+	float: left;
+	width: 65%;
+	margin-bottom: 5%;
+}
+
+#weekdays {
+	width: 30%;
+	float:left;
+	margin-right: 6%;
+}
+
+#times {
+	width: 60%;
+	float: left;
+}
 
 
 
