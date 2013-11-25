@@ -71,32 +71,40 @@ table {
 	float: right;
 	z-index: 10;
 	font-size: 13px;
-	color: black;
 	line-height: 1.1em;
 }
 
 
 #header { 
 	position:relative;
-		height:135px; 
-	width:950px;
-	background-color: red; 
-	margin:0px; 
+		height:115px; 
+	width:100%;
+	background-color: #cd2027; 
+	margin:0 auto; 
 	margin-top: 30px;
-	padding:0px; 
+	padding:0px;
+	box-shadow: 0px 0px 5px 0px #666 
+}
+
+#header-wrapper {
+	position: relative;
+		height: 110px;
+	width: 100%;
+	margin-top: 30px;
+	background-color: #cd2027;
 }
 
 #home { 
 	position:absolute; 
-			left:5%; 
+			left:15%; 
 			top:15px; 
 			z-index:10; 
 }
   
 #contact { 
 	position:absolute; 
-			right:20px; 
-			top: 30px; 
+			right:15%; 
+			top: 20px; 
 			z-index:10; 
 	color: white;
 	font-size: 12px;
@@ -104,11 +112,12 @@ table {
 }
   
 #main-menu {  
-	padding-top:60px; 
+	padding-top:45px; 
 	z-index:1; 
 	height:100px; 
-	width:950px; 
-	overflow: hidden; }
+	width:100%; 
+	margin: 0 auto; 
+}
 
   
 .menu-links {
@@ -125,6 +134,7 @@ table {
     float:left; 
     margin:0px; 
     text-transform: uppercase;
+    font-size: 15px;
     letter-spacing: .1em;
     font-weight: bold;
 }
@@ -142,14 +152,20 @@ table {
 /* Content
 ------------------------------------ */
 
+#container {
+	background-color: #fff;
+	width: 950px;
+	margin: 0px auto;
+}
+
 img {
 	max-width: 100%;
 	float: left;
 }
 
 body {
+	background-color: #fff;
 	margin: 0 auto;
-	width: 960px;
 	font-family: Helvetica;
 	font-size: 16px;
 	line-height: 1.2em;
@@ -157,6 +173,10 @@ body {
 
 p {
 	line-height: 1.5em;
+}
+
+.bold {
+	font-weight: bold;
 }
 
 #left {
@@ -176,6 +196,7 @@ p {
 h3 {
 	font-size: 1.5em;
 	line-height: 1.2em;
+	color: #666666;
 }
 
 
@@ -183,11 +204,9 @@ h3 {
 /* Index
 ------------------------------------ */
 
-#slider {
-	max-width: 100%;
-	margin-left: 7%;
-	margin-top: 3%;	
-}
+
+
+
 
 
 /* Products
@@ -198,7 +217,7 @@ h3 {
 }
 
 #logos img {
-	padding: 5px 10px 5px 10px;
+	padding: 7px 10px 7px 10px;
 	float: left;
 }
 
@@ -220,11 +239,7 @@ h3 {
 .food {
 	float: left;
 	width: 65%;
-	margin-bottom: 5%;
-}
-
-#questions {
-	font-size: 1em;
+	margin-bottom: 6%;
 }
 
 
@@ -233,7 +248,7 @@ h3 {
 ------------------------------------ */
 
 .titles {
-	color: red;
+	color: #cd2027;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: .05em;
@@ -258,6 +273,24 @@ h3 {
 	width: 60%;
 	float: left;
 }
+
+.car {
+	margin-bottom: 10%;
+}
+
+/* Footer
+------------------------------------ */
+
+#footer {
+	text-align: right;
+	font-size: 10px;
+	color: #666666;
+	padding: 20px;
+	margin-right: 14%;
+	clear: both;
+}
+
+
 
 
 
