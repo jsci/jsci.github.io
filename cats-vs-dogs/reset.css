@@ -92,15 +92,15 @@ html[xmlns] .clearfix { display: block; }
 #site-header {
 	position: relative;
 	height: 90px;
-	left: 25%;
-	margin-top: 50px;
+	margin-left: 25%;
+	margin-top: 10%;
 }
 
 
 #dogs {
 	font-family: "league_gothicregular", Georgia, serif, bold;
 	font-size: 115px;
-	padding-top: 30px;
+	padding-top: 3%;
 	text-transform: uppercase;
 	position: absolute;
 		top: 5%;
@@ -111,11 +111,11 @@ html[xmlns] .clearfix { display: block; }
 #cats {
 	font-family: "league_gothicregular", Georgia, serif, bold;
 	font-size: 115px;
-	padding-top: 30px;
+	padding-top: 3%;
 	text-transform: uppercase;
 	position: absolute;
 		top: 5%;
-		left: 30%;
+		left: 38%;
 	letter-spacing: .01em;
 }
 
@@ -127,9 +127,8 @@ html[xmlns] .clearfix { display: block; }
 	color: #ccc;
 	position: absolute;
 		top: 40%;
-		left: 20%;
-	margin-left: 15px;
-	margin-right: 15px;
+		left: 26%;
+	margin-left: 1.5%;
 }
 
 
@@ -156,9 +155,7 @@ a {
 	color: black;
 }
 
-header img {
-	margin-top: 20px;
-}
+
 
 header {
 	position: relative;
@@ -173,7 +170,7 @@ h2 {
 }
 
 
-li {
+#menu nav ul li {
 	float: left;
 	text-align: center;
 	text-transform: uppercase;
@@ -187,12 +184,12 @@ li {
 	list-style-type: disc;
 }
 
-.first {
-	list-style: none;
+#menu .first {
+	list-style-type: none;
 }
 
 
-nav {
+#menu nav {
 	position: absolute;
 	left: 20%;
 }
@@ -228,9 +225,9 @@ section {
 footer {
 	position: relative;
 		height: 40px;
-		top: 30px;
+		top: 5%;
 		left: 10%;
-	padding-bottom: 10px;
+	padding-bottom: 5%;
 	clear: both;
 	font-size: 13px;
 	}
@@ -239,17 +236,87 @@ footer {
 	float:left;
 	text-align: left;
 	width: 560px;
-	padding-top: 15px;
+	padding-top: 1%;
 	border-top: 3px solid black;
 }
 
 #copyright {
 	float:left;
 	text-align: right;
-	padding-top: 15px;
+	padding-top: 1%;
 	border-top: 3px solid black;
 }
 
 footer a {
 	color: red;
 }
+
+#menu {
+	display: block;
+}
+
+#mobile {
+	display:none;
+	margin-top: 5%;
+	margin-left: 13%;
+	border-top: 3px solid black;
+	border-bottom:3px solid black;
+	width: 100px;
+}
+
+#mobile nav ul li {
+	text-align: left;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 1.5em;
+	letter-spacing: 1px;
+}
+
+
+
+/* Responsive */
+
+@media screen and (max-width:900px) {
+	body {width: 100%;}
+	#menu nav {position: absolute;left: 18%;}
+	#menu nav ul li { float: left; text-align: center; text-transform: uppercase; font-weight: bold;
+					letter-spacing: 1px;padding: 10px 30px 10px 10px;margin: 20px 0px 30px 0px;
+					border-top: 3px solid black; border-bottom:3px solid black; font-size: 18px; list-style-type: disc;}
+}
+
+
+@media screen and (max-width:700px) {
+	body {width: 100%;}
+	#site-header {margin-left: 10%;}
+	#dogs {font-family: "league_gothicregular", Georgia, serif, bold; font-size: 90px; padding-top: 3%; text-transform: uppercase;
+			position: absolute;
+					top: 5%;
+					left: 2%;
+			letter-spacing: .01em;}
+	#cats {font-family: "league_gothicregular", Georgia, serif, bold; font-size: 90px; padding-top: 3%; text-transform: uppercase;
+			position: absolute;
+				top: 5%;
+				left: 46%;
+			letter-spacing: .01em;}
+	#vs { font-family: Georgia; font-weight: bold;
+			font-style: italic;
+			font-size: 40px;
+			color: #ccc;
+			position: absolute;
+					top: 25%;
+					left: 32%;
+			margin-left: 1.5%;}
+	section {max-width: 400px;}
+    #dawgs { float:none; width:98%; margin:0 1%; }
+    #kats { float:none; width:98%; margin:0 1%; }
+    #wiki {float:none; width:98%; margin:0 1%; padding-top: 5%; border-top: none;}
+    #copyright {float:none; width:98%; margin:0 1%; border-top: none; padding-bottom: 3%; text-align: left;}
+    body { font-size: 18px; }
+    h1 { font-size: 3em; }
+  	h2 { font-size: 2em; }
+  	#menu {display: none;}
+  	#mobile {display:block;}
+  }
+  
+
