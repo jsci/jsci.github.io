@@ -52,6 +52,35 @@ table {
 
 
 
+/* @font-face
+------------------------------------ */
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('src/Raleway/raleway-bold-webfont.eot');
+    src: url('src/Raleway/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('src/Raleway/raleway-bold-webfont.woff') format('woff'),
+         url('src/Raleway/raleway-bold-webfont.ttf') format('truetype'),
+         url('src/Raleway/raleway-bold-webfont.svg#ralewaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('src/Raleway/raleway-regular-webfont.eot');
+    src: url('src/Raleway/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('src/Raleway/raleway-regular-webfont.woff') format('woff'),
+         url('src/Raleway/raleway-regular-webfont.ttf') format('truetype'),
+         url('src/Raleway/raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
 /* Logo
 ------------------------------------ */
 
@@ -79,7 +108,7 @@ table {
 	position:relative;
 		height:115px; 
 	width:100%;
-	background-color: #cd2027; 
+	background-color: #e94534; 
 	margin:0 auto; 
 	margin-top: 30px;
 	padding:0px;
@@ -91,17 +120,17 @@ table {
 		height: 110px;
 	width: 100%;
 	margin-top: 30px;
-	background-color: #cd2027;
+	background-color: #e94534;
 }
 
 #home { 
 	position:absolute; 
-			left:15%; 
-			top:15px; 
+			left:14%;  
 			z-index:10; 
 }
   
 #contact { 
+	font-family: "ralewaymedium", Helvetica;
 	position:absolute; 
 			right:15%; 
 			top: 20px; 
@@ -112,7 +141,6 @@ table {
 }
   
 #main-menu {  
-	padding-top:45px; 
 	z-index:1; 
 	height:100px; 
 	width:100%; 
@@ -122,19 +150,19 @@ table {
   
 .menu-links {
 	position:relative;
-		left: 25%; 
+		left: 23%; 
 	display:block; 
 	list-style-type:none;
-	margin:0px; 
+	margin-top: 2%; 
 	float:left;
 }
 
 .menu-links li { 
+	font-family: "ralewaybold", Helvetica, bold;
     display:inline; 
     float:left; 
     margin:0px; 
     text-transform: uppercase;
-    font-size: 15px;
     letter-spacing: .1em;
     font-weight: bold;
 }
@@ -142,9 +170,9 @@ table {
 .menu-links li a { 
 	display:block; 
 	float:left;  
-	padding:0 20px; 
+	padding: 8px 20px; 
 	text-decoration: none;
-	color: white;
+	color: #b83d30;
 }
 
 
@@ -166,9 +194,10 @@ img {
 body {
 	background-color: #fff;
 	margin: 0 auto;
-	font-family: Helvetica;
+	font-family: "ralewayregular", Helvetica;
 	font-size: 16px;
-	line-height: 1.2em;
+	letter-spacing: .03em;
+	line-height: 1.4em;
 }
 
 p {
@@ -176,7 +205,7 @@ p {
 }
 
 .bold {
-	font-weight: bold;
+	font-family: "ralewaybold", Helvetica;
 }
 
 #left {
@@ -199,6 +228,10 @@ h3 {
 	color: #666666;
 }
 
+.numbers {
+	font-family: Helvetica;
+}
+
 #clear {
 	clear: both;
 }
@@ -219,6 +252,7 @@ h3 {
 ------------------------------------ */
 
 #message {
+	font-family: "ralewayregular", Helvetica;
 	margin-bottom: 10%;
 }
 
@@ -233,11 +267,12 @@ h3 {
 
 
 .types {
+	font-family: "ralewaybold", Helvetica;
 	color: red;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: .05em;
-	font-size: 14px;
+	font-size: 12px;
 	float: left;
 	width: 35%;
 }
@@ -254,11 +289,12 @@ h3 {
 ------------------------------------ */
 
 .titles {
+	font-family: "ralewaybold", Helvetica;
 	color: #cd2027;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: .05em;
-	font-size: 14px;
+	font-size: 12px;
 	float: left;
 	width: 35%;
 }
@@ -296,6 +332,10 @@ h3 {
 	clear: both;
 }
 
+
+
+/* Responsive
+------------------------------------ */
 
 
 
