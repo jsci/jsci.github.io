@@ -460,3 +460,23 @@ h3 {
 	#mobile-break {display: block; font-family: Helvetica; font-size: 15px;}
 }
 
+
+@media handheld and (max-width:670px) {
+	body {width: 100%; font-size: 19px;}
+	#container {
+	background-color: #fff;
+	width: 100%;
+	margin: 0px auto;}
+	#home { 
+	position:absolute; 
+			left:10%;  
+			z-index:10;}
+	#header { width:100%;}
+	#header-wrapper {width:100%;}
+	#left {display: none;}
+	#right {margin-left: 27%; width: 60%;}
+	#message {display: none;}
+	#break {line-height: .5em; display: block;}
+	#hours-screen {display:none;}
+	#mobile-break {display: block; font-family: Helvetica; font-size: 15px;}
+}
