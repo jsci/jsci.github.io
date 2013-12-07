@@ -395,22 +395,22 @@ h3 {
 }	
 
 
-@media screen and (max-width:920px) {
+@media screen and (max-width:925px) {
 	body {width: 100%; font-size: 18px;}
 	#container {
 		background-color: #fff;
 		width: 100%;
 		margin: 0px auto;}
-	#home { position:absolute; 
-			left:15%;  
+	#home { 
+		position:absolute; 
+			left:8%;  
 			z-index:10;}
-	#header { position: relative; height: 200px; width:100%;}
-	#header-wrapper {position: relative; height: 200px; width:100%;}
-	body {max-width: 100%; font-size: 18px;}
-	nav a { margin: 15px 15px; }
+	.menu-links {left: 18%;}
+	.menu-links li a { padding: 7px 13px;}
+	#contact { right:3%;} 
 	#left {display: none;}
 	#mobile-img {display: block; margin-top: 5%; margin-bottom: 7%; width: 90%;}
-	#right {margin-left: 27%; width: 55%;}
+	#right {margin-left: 23%; width: 55%;}
 }
 
 
@@ -421,8 +421,9 @@ h3 {
 		width: 100%;
 		margin: 0px auto;}
 	#home { position:absolute; 
-			left:10%;  
+			left:6.5%;  
 			z-index:10;}
+	.menu-links li a { padding: 7px 10px;}
 	#header { width:100%;}
 	#header-wrapper {width:100%;}
 	body {max-width: 100%; font-size: 18px;}
