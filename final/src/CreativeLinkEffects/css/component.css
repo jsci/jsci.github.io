@@ -32,6 +32,8 @@ nav a {
 	nav a { margin: 15px 18px; }
 }
 
+
+
 @media screen and (max-width:670px) {
 	body {width: 100%; font-size: 19px;}
 	nav a { margin: 15px 10px; }

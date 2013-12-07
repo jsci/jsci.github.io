@@ -262,6 +262,10 @@ h3 {
 	box-shadow: .5px 1px 4px 0px #666;
 }
 
+#mobile-img {
+	display: none;
+}
+
 
 /* Products
 ------------------------------------ */
@@ -359,7 +363,7 @@ h3 {
 /* Responsive
 ------------------------------------ */
 
-/* 1100px in normalize.css */
+/* 1100px in component.css */
 
 @media screen and (max-width:1060px) {
 	body {width: 100%; font-size: 17px;}
@@ -368,50 +372,36 @@ h3 {
 		width: 100%;
 		margin: 0px auto;}
 	#main-menu {  
-	position: absolute;
-		top:50%;
-	height:100px; }
+		position: absolute;
+			top:6%;
+		height:110px; }
+	.menu-links {left: 21%;}
+	#contact { right:7%;} 
 	#home { 
-	position:absolute; 
-			left:15%;  
+		position:absolute; 
+			left:10%;  
 			z-index:10;}
-	#header { 
-	position:relative;
-		height:225px; 
-	width:100%;
-	background-color: #e94534; 
-	margin:0 auto; 
-	margin-top: 30px;
-	padding:0px;
-	box-shadow: 0px 0px 5px 0px #666 }
-
-	#header-wrapper {
-	position: relative;
-		height: 225px;
-	width: 100%;
-	margin-top: 30px;
-	background-color: #e94534;}
-	#contact { 
-	font-family: "ralewaymedium", Helvetica;
-	position:absolute; 
-			left:27%; 
-			top: 27px; 
-			z-index:10; 
-	color: white;
-	font-size: 12px;
-	line-height: 1.1em;}
 	#map {max-width: 100%}
+	#left {
+		margin-top: 5%;
+		margin-left: 8%;
+		margin-right: 5%;
+		width: 30%;
+		float: left;}
+	#right {
+		margin: 5%;
+		width: 44%;
+		float: left;}
 }	
 
 
 @media screen and (max-width:920px) {
 	body {width: 100%; font-size: 18px;}
 	#container {
-	background-color: #fff;
-	width: 100%;
-	margin: 0px auto;}
-	#home { 
-	position:absolute; 
+		background-color: #fff;
+		width: 100%;
+		margin: 0px auto;}
+	#home { position:absolute; 
 			left:15%;  
 			z-index:10;}
 	#header { position: relative; height: 200px; width:100%;}
@@ -419,6 +409,7 @@ h3 {
 	body {max-width: 100%; font-size: 18px;}
 	nav a { margin: 15px 15px; }
 	#left {display: none;}
+	#mobile-img {display: block; margin-top: 5%; margin-bottom: 7%; width: 90%;}
 	#right {margin-left: 27%; width: 55%;}
 }
 
@@ -426,11 +417,10 @@ h3 {
 @media screen and (max-width:830px) {
 	body {width: 100%; font-size: 19px;}
 	#container {
-	background-color: #fff;
-	width: 100%;
-	margin: 0px auto;}
-	#home { 
-	position:absolute; 
+		background-color: #fff;
+		width: 100%;
+		margin: 0px auto;}
+	#home { position:absolute; 
 			left:10%;  
 			z-index:10;}
 	#header { width:100%;}
@@ -445,11 +435,10 @@ h3 {
 @media screen and (max-width:670px) {
 	body {width: 100%; font-size: 19px;}
 	#container {
-	background-color: #fff;
-	width: 100%;
-	margin: 0px auto;}
-	#home { 
-	position:absolute; 
+		background-color: #fff;
+		width: 100%;
+		margin: 0px auto;}
+	#home { position:absolute; 
 			left:10%;  
 			z-index:10;}
 	#header { width:100%;}
@@ -466,11 +455,10 @@ h3 {
 @media handheld and (max-width:670px) {
 	body {width: 100%; font-size: 19px;}
 	#container {
-	background-color: #fff;
-	width: 100%;
-	margin: 0px auto;}
-	#home { 
-	position:absolute; 
+		background-color: #fff;
+		width: 100%;
+		margin: 0px auto;}
+	#home { position:absolute; 
 			left:10%;  
 			z-index:10;}
 	#header { width:100%;}
