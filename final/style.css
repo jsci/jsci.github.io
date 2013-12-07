@@ -448,7 +448,7 @@ h3 {
 	#header { width:100%;}
 	#header-wrapper {width:100%;}
 	#left {display: none;}
-	#right {margin-left: 21%; width: 60%;}
+	#right {margin-left: 28.5%; width: 60%;}
 	#message {display: none;}
 	#break {line-height: .5em; display: block;}
 	#hours-screen {display:none;}
@@ -466,12 +466,11 @@ h3 {
 			left:6.5%;  
 			z-index:10;}
 	.menu-links {left: 25%; margin-top: 3%;}
-	.menu-links { margin-top: 7%}
 	#contact {display: none;}
 	#header { width:100%;}
 	#header-wrapper {width:100%;}
 	#left {display: none;}
-	#right {margin-left: 21%; width: 60%;}
+	#right {margin-left: 28.5%; width: 60%;}
 	#message {display: none;}
 	#break {line-height: .5em; display: block;}
 	#hours-screen {display:none;}
