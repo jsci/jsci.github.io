@@ -476,3 +476,11 @@ h3 {
 	#hours-screen {display:none;}
 	#mobile-break {display: block; font-family: Helvetica; font-size: 15px;}
 }
+
+@media screen and (max-width:640px) {
+	#right {margin-left: 28%; margin-top: 10%}
+}
+
+@media handheld and (max-width:640px) {
+	#right {margin-left: 28%; margin-top: 10%;}
+}
