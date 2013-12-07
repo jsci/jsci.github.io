@@ -118,7 +118,7 @@ table {
 
 #header { 
 	position:relative;
-		height:115px; 
+		height:120px; 
 	width:100%;
 	background-color: #e94534; 
 	margin:0 auto; 
@@ -410,7 +410,7 @@ h3 {
 	#contact { right:3%;} 
 	#left {display: none;}
 	#mobile-img {display: block; margin-top: 5%; margin-bottom: 7%; width: 90%;}
-	#right {margin-left: 23%; width: 55%;}
+	#right {margin-left: 21%; width: 55%;}
 }
 
 
@@ -428,24 +428,27 @@ h3 {
 	#header-wrapper {width:100%;}
 	body {max-width: 100%; font-size: 18px;}
 	nav a { margin: 15px 15px; }
-	#left {display: none;}
-	#right {margin-left: 27%; width: 60%;}
+	#left {display: none; margin-top: 9%;}
+	#right {margin-left: 21%; width: 60%; margin-top: 9%;}
 }
 
 
-@media screen and (max-width:670px) {
+
+@media screen and (max-width:790px) {
 	body {width: 100%; font-size: 19px;}
 	#container {
 		background-color: #fff;
 		width: 100%;
 		margin: 0px auto;}
 	#home { position:absolute; 
-			left:10%;  
+			left:6.5%;  
 			z-index:10;}
+	.menu-links {left: 25%; margin-top: 3%;}
+	#contact {display: none;}
 	#header { width:100%;}
 	#header-wrapper {width:100%;}
 	#left {display: none;}
-	#right {margin-left: 27%; width: 60%;}
+	#right {margin-left: 21%; width: 60%;}
 	#message {display: none;}
 	#break {line-height: .5em; display: block;}
 	#hours-screen {display:none;}
@@ -453,19 +456,22 @@ h3 {
 }
 
 
-@media handheld and (max-width:670px) {
+@media handheld and (max-width:790px) {
 	body {width: 100%; font-size: 19px;}
 	#container {
 		background-color: #fff;
 		width: 100%;
 		margin: 0px auto;}
 	#home { position:absolute; 
-			left:10%;  
+			left:6.5%;  
 			z-index:10;}
+	.menu-links {left: 25%; margin-top: 3%;}
+	.menu-links { margin-top: 7%}
+	#contact {display: none;}
 	#header { width:100%;}
 	#header-wrapper {width:100%;}
 	#left {display: none;}
-	#right {margin-left: 27%; width: 60%;}
+	#right {margin-left: 21%; width: 60%;}
 	#message {display: none;}
 	#break {line-height: .5em; display: block;}
 	#hours-screen {display:none;}
