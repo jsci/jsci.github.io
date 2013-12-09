@@ -144,7 +144,7 @@ table {
 #contact { 
 	font-family: "ralewaymedium", Helvetica;
 	position:absolute; 
-			right:15%; 
+			right:14%; 
 			top: 20px; 
 			z-index:10; 
 	color: white;
@@ -162,7 +162,7 @@ table {
   
 .menu-links {
 	position:relative;
-		left: 23%; 
+		left: 26%; 
 	display:block; 
 	list-style-type:none;
 	margin-top: 2%; 
@@ -482,5 +482,9 @@ h3 {
 }
 
 @media handheld and (max-width:640px) {
+	#right {margin-left: 28%; margin-top: 10%;}
+}
+
+@media handheld and (max-width:320px) {
 	#right {margin-left: 28%; margin-top: 10%;}
 }
