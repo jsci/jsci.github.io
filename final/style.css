@@ -215,6 +215,15 @@ p {
 	line-height: 1.5em;
 }
 
+a {
+	color: #e94534;
+	text-decoration: none;
+}
+
+blockquote {
+	text-indent: -0.35em;
+	}
+
 .bold {
 	font-family: "ralewaybold", Helvetica;
 }
@@ -306,6 +315,11 @@ h3 {
 	display: none;
 }
 
+#anchor {
+	text-align: right;
+	margin-top: 5%;
+}
+
 
 /* Location
 ------------------------------------ */
@@ -357,7 +371,6 @@ h3 {
 	margin-right: 14%;
 	clear: both;
 }
-
 
 
 /* Responsive
