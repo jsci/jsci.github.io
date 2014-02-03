@@ -1,0 +1,291 @@
+/* Meyer Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/  
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* END OF RESET */
+
+
+
+.mouth {
+  position:absolute;
+  top: 140px;
+  left: 50px;
+  position: absolute;
+  width: 90px;
+  height: 35px;
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+  border-radius: 0 0 0 50px;
+}
+
+.insidemouth {
+  position: absolute;
+  top: 10px;
+  left:3px;
+  width: 90px;
+  height: 3px;
+  background-color: black;
+}
+
+.insidemouth:after {
+	content:"";
+  position: absolute;
+  top: 15px;
+  left:9px;
+  width: 81px;
+  height: 3px;
+  background-color: black;
+}
+
+.insidemouthh {
+  position: absolute;
+  top: 0px;
+  left:35px;
+  width: 3px;
+  height: 35px;
+  background-color: black;
+}
+
+.insidemouthh:after {
+	content:"";
+  position: absolute;
+  top: 0px;
+  left:35px;
+  width: 3px;
+  height: 35px;
+  background-color: black;
+}
+.eyebar {
+  position: absolute;
+  top: 65px;
+  left: 55px;
+  width: 100px;
+  height: 60px;
+  background: black;
+  border-style: solid;
+  border-color: white;
+  -webkit-border-radius: 100px / 50px;
+  border-radius: 100px / 50px;
+}
+
+
+.eye {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: yellow;
+  border-radius: 50%;
+ }
+
+.eye:after {
+        content:""; 
+  position: absolute;
+  left: 42px;
+  width: 40px;
+  height: 40px;
+  background-color: yellow;
+  border-radius: 50%;
+ }
+ 
+ .pupil {
+  position: absolute;
+  top: 20px;
+  left: 27px;
+  width: 5px;
+  height: 5px;
+  background-color: black;
+ }
+ 
+ .pupil:after {
+        content:""; 
+  position: absolute;
+  left: 45px;
+  z-index: 1;
+  width: 5px;
+  height: 5px;
+  background-color: black;
+ }
+ 
+.head {
+  position: absolute;
+  top: -190px;
+  left: 0px;
+  width: 150px;
+  height: 190px;
+  background-color: gray;
+  opacity: .8;
+  border-radius: 50% 50% 0 0;
+}
+
+.antenna {
+  position: absolute;
+  top:-50px;
+  left:70px;
+  width: 10px;
+  height: 55px;
+  background-color:gray
+}
+
+.top {
+  position: absolute;
+  top: -70px;
+  left: 65px;
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  border-radius:50%;
+  background-color:lightgray;
+}
+  
+.body {
+  position: absolute;
+  top: 300px;
+  left: 130px;
+  width: 150px;
+  height: 290px;
+  background-color: gray;  
+}
+  
+.leftarm{
+  position:absolute;
+  background-color:gray;
+  opacity: .8;
+  top: 20px;
+  left: -10px;
+  width: 40px;
+  height: 200px;
+  -webkit-transform: rotate(30deg);
+  -webkit-transform-origin: 50% 0;  
+}
+
+.leftforearm {
+  position: absolute;
+  background-color:gray;
+  opacity: .8;
+  top:200px;
+  width:40px;
+  height: 120px;
+  left: 5px;
+  -webkit-transform: rotate(-40deg);
+  -webkit-transform-origin: 50% 0; 
+ }
+ 
+.rightarm{
+  position:absolute;
+  background-color:gray;
+  opacity: .8;
+  top: 20px;
+  left: 120px;
+  width: 40px;
+  height: 200px;
+  -webkit-transform: rotate(-30deg);
+  -webkit-transform-origin: 50% 0;  
+}
+
+.rightforearm {
+  position: absolute;
+  background-color:gray;
+  opacity: .8;
+  top:200px;
+  width:40px;
+  height: 120px;
+  left: 5px;
+  -webkit-transform: rotate(-40deg);
+  -webkit-transform-origin: 50% 0; 
+ }
+ 
+ .leftleg {
+  position:absolute;
+  background-color:gray;
+  opacity: .8;
+  top: 280px;
+  left: 15px;
+  width: 50px;
+  height: 150px;
+  -webkit-transform: rotate(10deg);
+  -webkit-transform-origin: 50% 0;
+ }
+ 
+ .leftshin {
+  position: absolute;
+  background-color:gray;
+  opacity: .8;
+  top:150px;
+  width:50px;
+  height: 180px;
+  -webkit-transform: rotate(10deg);
+  -webkit-transform-origin: 50% 0; 
+ }
+ 
+ .rightleg {
+  position:absolute;
+  background-color:gray;
+  opacity: .8;
+  top: 280px;
+  left: 100px;
+  width: 50px;
+  height: 150px;
+  -webkit-transform: rotate(-30deg);
+  -webkit-transform-origin: 50% 0;
+ }
+ 
+ .rightshin {
+  position: absolute;
+  background-color:gray;
+  opacity: .8;
+  top:150px;
+  width:50px;
+  height: 180px;
+  -webkit-transform: rotate(50deg);
+  -webkit-transform-origin: 50% 0; 
+ }
+ 
