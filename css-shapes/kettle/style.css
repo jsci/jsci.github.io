@@ -1,0 +1,364 @@
+/* Meyer Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/  
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* END OF RESET */
+
+body {
+  margin: 0 auto;
+  width: 960px;
+  background-color: black;
+}
+
+.body {
+  position: absolute;
+    top:200px;
+    left: 300px;
+  border-bottom: 100px solid #fff;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  height: 0;
+  width: 200px;
+}
+
+.body:after {
+  content:"";
+  position: absolute;
+  top: 100px;
+  left: -60px;
+  border-bottom: 100px solid #fff;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  height: 0;
+  width: 200px;
+  -webkit-transform: rotate(180deg);
+}
+
+.bottom {
+  position: absolute;
+    top:160px;
+    left: -1px;
+  width: 202px;
+  height: 70px;
+  background: #fff;
+  -webkit-border-radius: 100px / 50%;
+  border-radius: 100px / 50%;
+
+}
+
+.rim {
+  position: absolute;
+    top:-20px;
+    left:16px;
+  width: 170px;
+  height: 20px;
+  background-color: #fff;
+}
+
+.rim:after {
+  content:'';
+  position: absolute;
+    top:-20px;
+    left:0px;
+  width: 170px;
+  height: 40px;
+  background: #fff;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.lid-top {
+  position: absolute;
+  top: 57px;
+  left: 375px;
+  width: 170px;
+  height: 35px;
+  background: #fff;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.lid-bottom {
+  position: absolute;
+  left:375px;
+  top:75px;
+  width: 170px;
+  height: 40px;
+  background: #fff;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border-bottom: 4px solid black;
+}
+
+.lid-bottom:after {
+  content:'';
+  position: absolute;
+  left:0px;
+  top:0px;
+  width: 170px;
+  height: 20px;
+  background-color: #fff;
+}
+
+.handle {
+  position: absolute;
+  top:8px;
+}
+
+.handle-top {
+  position: absolute;
+    top: 36px;
+    left:424px;
+  width: 70px;
+  height: 15px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 3;
+}
+
+.handle-bottom {
+  position: absolute;
+    top: 50px;
+    left:430px;
+  width: 60px;
+  height: 10px;
+  background: #000;
+  z-index: 2;
+}
+
+.handle-bottom:after {
+  content:'';
+  position: absolute;
+    top: 2px;
+    left:0px;
+  width: 60px;
+  height: 15px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #000;
+  z-index: 2;
+}
+
+.lid {
+  position:absolute;
+  top: 95px;
+  left:1px;
+  z-index: 1;
+}
+
+.bottom-spout {
+  position: absolute;
+    top: 80px;
+    left: -80px;
+  width: 40px;
+  height: 5px;
+  background-color: #fff;
+  border-style: solid;
+  border-width: 15px;
+  border-color: #fff;
+  border-radius: 70%;
+  -webkit-transform: rotate(150deg);
+  z-index:3;
+}
+
+.bottom-spout:after {
+  content: '';
+  position: absolute;
+    top: -39px;
+    left: 0px;
+  width: 45px;
+  height: 5px;
+  background-color: #fff;
+  border-style: solid;
+  border-width: 15px;
+  border-color: #fff;
+  border-radius: 70%;
+  -webkit-transform: rotate(245deg);
+  z-index:3;
+}
+
+.middle-spout {
+  position: absolute;
+    top: 70px;
+    left: -100px;
+  width: 100px;
+  height: 70px;
+  background: #fff;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transform: rotate(230deg);
+}
+
+.top-spout {
+  position: absolute;
+    top: 47px;
+    left: -101px;
+  width: 50px;
+  height: 80px;
+  -webkit-transform: skew(30deg);
+  background: #fff;
+}
+
+.curve {
+  position: absolute;
+    top: 38px;
+    left: -96px;
+  width: 10px;
+  height: 2px;
+  border-style: solid;
+  border-width: 25px;
+  border-color: #000;
+  border-radius: 70%;
+  border-top: 0px;
+  -webkit-transform: rotate(30deg);
+  z-index: 4;
+}
+
+.spout {
+  z-index:3;
+}
+
+.bottom-hold {
+  position: absolute;
+    top:100px;
+    left:330px;
+  width: 30px;
+  height: 8px;
+  background: #fff;
+  -webkit-transform: rotate(50deg);
+}
+
+.bottom-hold:after {
+  content: '';
+  position: absolute;
+    top:-174px;
+    left:147px;
+  width: 30px;
+  height: 8px;
+  background: #fff;
+  -webkit-transform: rotate(87deg);
+}
+
+.middle-hold {
+  position: absolute;
+    top:65px;
+    left:332px;
+  width: 8px;
+  height: 30px;
+  background: #fff;
+  border-radius: 35% 35% 0 0;
+}
+
+.middle-hold:after {
+  content: '';
+  position: absolute;
+    top:0px;
+    left:246px;
+  width: 8px;
+  height: 31px;
+  background: #fff;
+  border-radius: 35% 35% 0 0;
+}
+
+.top-hold-outside {
+  position: absolute;
+    top: 100px;
+    left: 160px;
+  height: 120px;
+  width: 275px;
+  background: #fff;
+  border-radius: 85px;
+  z-index: 0.5;
+}
+
+.top-hold-inside {
+  position: absolute;
+    top: 130px;
+    left: 170px;
+  height: 100px;
+  width: 256px;
+  background: #000;
+  border-radius: 45px;
+  z-index: 0;
+}
+
+.joint {
+  position: absolute;
+    top: 45px;
+    left: 330px;
+  width: 5px;
+  height: 25px;
+  background: #fff;
+  -webkit-border-radius: 20%;
+  border-radius: 0 / 20%;
+}
+
+.joint:after {
+  content:'';
+  position: absolute;
+    top: 0px;
+    left: 252px;
+  width: 5px;
+  height: 25px;
+  background: #fff;
+  -webkit-border-radius: 20%;
+  border-radius: 0 / 20%;
+}
+
+.hold-handle {
+  position:absolute;
+    top:-140px;
+    left:160px;
+}
+
+.kettle {
+  position: absolute;
+  top: 55px;
+}

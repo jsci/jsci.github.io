@@ -1,0 +1,279 @@
+/* Meyer Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/  
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* END OF RESET */
+
+
+body {
+  margin: 0 auto;
+  width: 960px;
+}
+
+
+.top-hold {
+    position: absolute;
+    top: 142px;
+    left: 600px;
+    width: 90px;
+    height:60px;
+    background-color: #fff;
+    border-top: 15px solid #000;
+    border-bottom: 20px solid #000;
+    border-left: 20px solid #000;
+    border-right: 30px solid #000;
+    border-radius: 45% / 50%;
+    -webkit-transform: rotate(-15deg);
+}
+
+.top-base {
+    position: absolute;
+    top: 210px;
+    left: 525px;
+    width: 80px;
+    height: 40px;
+    background-color: #000;
+    -webkit-transform: rotate(-28deg);
+    -webkit-transform-origin: 50% 0; 
+}
+
+.top-base-part {
+    position: absolute;
+    top: 192px;
+    left: 527px;
+    width: 103px;
+    height: 15px;
+    background-color: #000;
+    -webkit-transform: rotate(-36deg);
+    -webkit-transform-origin: 50% 0;
+}
+
+.top-base-part:after {
+    content:'';
+    position: absolute;
+    top: 49px;
+    left: 7px;
+    width: 103px;
+    height: 17px;
+    background-color: #000;
+    -webkit-transform: rotate(30deg);
+    -webkit-transform-origin: 50% 0;
+}
+
+.top-base:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -117px;
+    width: 155px;
+    height: 43px;
+    background-color: #000;
+    -webkit-transform: rotate(-3deg);
+}
+
+.bottom-hold {
+   position: absolute;
+    top: 230px;
+    left: 640px;
+   display:block;
+   width: 95px;
+   height: 145px;
+   background-color: #000;
+   -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+   border-radius: 50%  50%  50%  50%  / 60%   60%   40%  40%;
+   -webkit-transform: rotate(-90deg);
+ }
+
+
+ .bottom-hold:after {
+   content: '';
+   position: absolute;
+   top: 23px; 
+   left: 16px;
+   display:block;
+   width: 60px;
+   height: 90px;
+   background-color: #fff;
+   -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+   border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
+ }
+
+ .bottom-base {
+    position: absolute;
+    top: 285px;
+    left: 550px;
+    width: 80px;
+    height: 40px;
+    background-color: #000; 
+}
+
+.bottom-base:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -165px;
+    width: 180px;
+    height: 42px;
+    background-color: #000; 
+}
+
+.bottom-base-part {
+    position: absolute;
+    top: 320px;
+    left: 552px;
+    width: 107px;
+    height: 15px;
+    background-color: #000;
+    -webkit-transform: rotate(9deg);
+    -webkit-transform-origin: 50% 0; 
+}
+
+.bottom-base-part:after {
+    content:'';
+    position: absolute;
+    top: -45px;
+    left: 0px;
+    width: 107px;
+    height: 12px;
+    background-color: #000;
+    -webkit-transform: rotate(-25deg);
+    -webkit-transform-origin: 50% 0; 
+}
+
+.joint {
+    position: absolute;
+    top: 285px;
+    left:366px;
+    width: 42px;
+    height: 42px;
+    background-color: #000;
+    -webkit-border-radius: 50px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.joint:after {
+    content:'';
+    position: absolute;
+    top: 9px;
+    left:10px;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    -webkit-border-radius: 50px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.top-blade {
+    position: absolute;
+    top: 287px;
+    left: 100px;
+    width: 325px;
+    height: 38px;
+    background: gray;
+}
+
+.top-tip {
+    position: absolute;
+    top: 0px;
+    left: -29px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 30px solid gray;
+    border-bottom: 25px solid transparent;
+}
+
+.bottom-blade {
+    position: absolute;
+    top: 287px;
+    left: 100px;
+    width: 325px;
+    height: 38px;
+    background: gray;
+    z-index: -1;
+}
+
+.bottom-tip {
+    position: absolute;
+    top: 0px;
+    left: -30px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 30px solid gray;
+    border-bottom: 25px solid transparent;
+}
+
+.top {
+    position: absolute;
+    width:800px;
+    height:600px;
+}
+
+.bottom {
+    position: absolute;
+    width:800px;
+    height:600px;
+    z-index: 2;
+    -webkit-transform: rotate(0deg);
+    -webkit-transform-origin: 548px 307px; 
+}
+
+.center {
+    position: absolute;
+    top:307px;
+    left:548px;
+    height: 1px;
+    width: 1px;
+    background-color: green;
+    z-index: 3;
+    display:none;
+}
