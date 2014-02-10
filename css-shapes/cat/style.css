@@ -255,13 +255,13 @@ body {
 .cat {
   position: absolute;
   top:250px;
-  left:350px;
+  left:250px;
 }
 
 #talkbubble {
    position: absolute;
    top: 200px;
-   left: 500px;
+   left: 400px;
    width: 120px;
    height: 80px;
    background: #f19f0f;
