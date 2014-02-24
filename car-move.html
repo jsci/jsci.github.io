@@ -1,0 +1,63 @@
+<style>
+@-webkit-keyframes road-move {
+  0% { background-position: 0px; }
+  100% { background-position: 6000px; }
+}
+
+@-webkit-keyframes car-move {
+  0% { -webkit-transform: translate(1000px,0);}
+  25% { -webkit-transform: translate(300px,0);}
+  75% { -webkit-transform: translate(500px,0);}
+  100% { -webkit-transform: translate(-500px,0);}
+}
+
+
+@-webkit-keyframes wheel-move {
+  0% { -webkit-transform: rotate(0deg);
+ }
+  100% { -webkit-transform: rotate(-360deg);
+ }
+}
+
+#road{
+  background: url("http://cykod.github.io/Web2Spring2013/images/back.jpg");
+  height: 200px;
+  width: 100%;
+  -webkit-animation:road-move 4s linear infinite;
+  position:relative;
+}
+
+.wheel {
+  background: url("http://cykod.github.io/Web2Spring2013/images/tire.png");
+  width: 60px;
+  height: 60px;
+   -webkit-animation:wheel-move .25s linear infinite;
+}
+
+  #wheel1 {
+    position:absolute;
+    top: 155px;
+    left: 57px;
+  }
+
+  #wheel2 {
+    position:absolute;
+    top:155px;
+    left:287px;
+  }
+  
+#car {
+  position:absolute;
+  top: -40px;
+  background: url("http://cykod.github.io/Web2Spring2013/images/car.png") no-repeat 0px 80px;
+  -webkit-animation:car-move 5s ease infinite;
+  width: 400px;
+  height: 200px;
+}
+</style>
+
+<div id='road'>
+<div id='car'><div id='wheel1' class='wheel'></div>
+<div id='wheel2' class='wheel'></div>
+</div> 
+</div>
