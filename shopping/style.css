@@ -1,0 +1,278 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of Reset */
+
+
+
+
+body {background-color: #fff;
+	  width:100%;
+	  background: url('images/slider1.jpg'),
+	   			  url('images/bluebg.jpg'), 
+ 				  
+	   			  url('images/bluebg.jpg');
+
+	  background-repeat: no-repeat,
+	  					 no-repeat,
+	  				
+	  					 no-repeat;
+
+	  background-position: 0px 0px,
+	                       0px 820px,
+	                
+	                       0px 2750px;
+
+
+	   max-width: 960px;
+  	   margin: 0 auto;
+  	}
+
+p {font-family: 'Open Sans', sans-serif;
+   font-size: 1.2em;
+   color:white;}
+	                      
+a {
+	color:#50add2;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+
+header {width: 100%;}
+
+.header-bar {
+	position: fixed;
+	left:0px;
+	z-index: 50000;
+	background-color: #fff;
+	opacity: .97;
+	width: 100%;
+	-moz-box-shadow: 0px -3px 20px 0px #999999;
+	-webkit-box-shadow: 0px -3px 20px 0px #999999;
+	box-shadow: 0px -3px 20px 0px #999999;
+}
+
+.header {
+height: 80px;
+}
+
+.name a {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	float: left;
+	margin-left: 40px;
+	letter-spacing: 3px;
+	line-height: 80px;
+}
+
+#main-nav {
+	float:right;
+	margin-top: 30px;
+}
+
+li {
+	display: inline-block;
+	margin-right: 50px;
+}
+
+nav li a {
+	font-size: 14px;
+	letter-spacing: 3px;
+}
+
+.container {
+clear: both;
+background-size: cover;
+background-position: center;
+}
+
+
+h1 {padding-top:1%;
+	margin-left:5%;
+	width:35%;
+	font-size: 3em;
+	letter-spacing: 3px;
+	line-height: 1.15em;
+	color:white;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	text-align: left;}
+
+h2 {color: white;
+	font-family: georgia, serif;
+	font-size: 2em;
+    text-transform: none;}
+
+#home {
+   	padding-top: 5%;
+   }
+
+#quote {
+	position: absolute;
+	top: 820px;
+	margin-top: 25%;
+	opacity: .6%;
+}
+
+#quote p {
+	font-family: 'Georgia', serif;
+	font-style: italic;
+	font-size: 24px;
+	letter-spacing: .45px;
+	line-height: 1.5em;
+	margin-bottom: 5%;
+	margin-left: 20%;
+	margin-right: 30%;
+}
+
+blockquote {
+	text-indent: -0.45em;
+	}
+
+
+#collections {
+	height:820px;
+	position: absolute;
+	top: 1640px;
+	padding-top: 15%;
+	opacity: .6%;
+	float: left;
+}
+
+.product-box {
+	background-color: #f8f8f8;
+	width: 310px;
+	height: 412px;
+	float: left;
+	margin-right: 4px;
+}
+
+#notice {
+	padding: 40% 30% 30% 30%;
+}
+
+#notice p {
+	color: #000;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 2.5px;
+	line-height: 1.5em;
+	text-align: center;
+	margin-bottom: 50%;
+}
+
+
+.filler {
+	padding: 40% 30% 30% 30%;
+}
+
+.filler p {
+	color: #000;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 2.5px;
+	line-height: 1.5em;
+	text-align: center;
+	margin-bottom: 50%;
+}
+
+#about {
+	position: absolute;
+	top: 2750px;
+	height:820px;
+	padding: 20% 25% 20% 15%;
+}
+
+#about p {
+	line-height: 1.5em;
+	letter-spacing: .45px;
+	margin-top: 5%;
+}
+
+
+#contact {position: absolute;
+		top:3800px;
+		left:0px;
+		padding: 50px;
+		background-color: black;
+		width:100%;
+		letter-spacing: 2px;
+		line-height: 1.65em;
+		text-transform: uppercase;}
+
+
+#contact a {font-family: 'Open Sans', sans-serif;
+		text-decoration: none;
+		color:#fff;
+		opacity: .75;}	
+
+
+
+/* =================== DETAIL PAGE ==================== */
+
+#left {
+	width: 50%;
+}
+
+
+#right {
+	width: 50%;
+}
+
+
+
+
+
+
+

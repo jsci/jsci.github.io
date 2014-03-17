@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+
+
+		<script>
+		  var prices = { "Shirt" : 20, "Hat": 10, "Pants": 30 };
+		  
+		  function subtotal(item, quantity) {
+		     return prices[item] * quantity; 
+		  }
+		  
+		  function totalCost(items) {
+		    var total = 0;
+		    
+		    for(var itemName in items) {
+		      var quantity = items[itemName];
+		      var itemPrice = subtotal(itemName, quantity);
+		      total += itemPrice;
+		    }
+		    
+		    return total;
+		  }
+
+		  var cart = { "Shirt": 2, "Hat": 1, "Pants": 3 };
+		  
+		  var total = totalCost(cart);
+		 
+	
+	function addCartItem (itemName) {
+		var totalCoast;
+	}
+		</script>
+
+
+
+</head>
+
+
+<body>
+
+<button onclick="alert(total);">Add Shirt</button>
+<button onclick="alert(total);">Add Hat</button>
+<button onclick="alert(total);">Add Pants</button>
+
+</body>
+
+</html>
+
+
