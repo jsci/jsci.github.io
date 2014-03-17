@@ -147,7 +147,9 @@ h1 {padding-top:1%;
 	color:white;
 	font-family: 'Open Sans', sans-serif;
 	text-transform: uppercase;
-	text-align: left;}
+	text-align: left;
+	opacity: .6;
+}
 
 h2 {color: white;
 	font-family: georgia, serif;
