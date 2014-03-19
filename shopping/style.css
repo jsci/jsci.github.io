@@ -50,16 +50,51 @@ table {
 /* End of Reset */
 
 
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('src/OpenSans/opensans-regular-webfont.eot');
+    src: url('src/OpenSans/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('src/OpenSans/opensans-regular-webfont.woff') format('woff'),
+         url('src/OpenSans/opensans-regular-webfont.ttf') format('truetype'),
+         url('src/OpenSans/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
-p {font-family: 'Open Sans', sans-serif;
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('src/OpenSans/opensans-bold-webfont.eot');
+    src: url('src/OpenSans/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('src/OpenSans/opensans-bold-webfont.woff') format('woff'),
+         url('src/OpenSans/opensans-bold-webfont.ttf') format('truetype'),
+         url('src/OpenSans/opensans-bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('src/OpenSans/opensans-light-webfont.eot');
+    src: url('src/OpenSans/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('src/OpenSans/opensans-light-webfont.woff') format('woff'),
+         url('src/OpenSans/opensans-light-webfont.ttf') format('truetype'),
+         url('src/OpenSans/opensans-light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+p {font-family: 'open_sansregular', sans-serif;
    font-size: 1.2em;
    color:white;}
 	                      
 a {
 	color:#50add2;
 	text-decoration: none;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'open_sansregular', sans-serif;
 	font-size: 16px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -85,7 +120,7 @@ height: 80px;
 }
 
 .name a {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'open_sansregular', sans-serif;
 	font-size: 11px;
 	text-transform: uppercase;
 	float: left;
@@ -123,7 +158,7 @@ h1 {padding-top:1%;
 	letter-spacing: 3px;
 	line-height: 1.15em;
 	color:white;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'open_sansregular', sans-serif;
 	text-transform: uppercase;
 	text-align: left;
 	opacity: .6;
@@ -232,7 +267,7 @@ blockquote {
 		text-transform: uppercase;}
 
 
-#contact a {font-family: 'Open Sans', sans-serif;
+#contact a {font-family: 'open_sansregular', sans-serif;
 		text-decoration: none;
 		color:#fff;
 		opacity: .75;}	
@@ -260,7 +295,7 @@ blockquote {
 }
 
 h3 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'open_sansbold', sans-serif;
 	font-weight: bold;
 	color: #5cb2d4;
 	letter-spacing: 2px;
@@ -273,7 +308,7 @@ h3 {
 }
 
 #type p {
-	font-family: 'Open Sans:300', sans-serif;
+	font-family: 'open_sanslight', sans-serif;
 	text-transform: uppercase;
 	font-size: 14px;
 	color:#6d7475;
@@ -283,7 +318,7 @@ h3 {
 }
 
 h4 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'open_sansbold', sans-serif;
 	font-weight: bold;
 	color: #6d7475;
 	letter-spacing: 1px;
@@ -324,7 +359,7 @@ select {
 }
 
 #add-to-cart p {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'open_sansregular', sans-serif;
 	color: #fff;
 	letter-spacing: 2px;
 	text-transform: uppercase;
