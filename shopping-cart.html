@@ -4,7 +4,11 @@
 
 
 		<script>
-		  var prices = { "Shirt" : 20, "Hat": 10, "Pants": 30 };
+
+		$(function() {
+
+
+		  var prices = { "Shirt" : 20, "Shoes": 10, "Pants": 30 };
 		  
 		  function subtotal(item, quantity) {
 		     return prices[item] * quantity; 
@@ -22,15 +26,59 @@
 		    return total;
 		  }
 
-		  var cart = { "Shirt": 2, "Hat": 1, "Pants": 3 };
+		  var cart = { "Shirt": 2, "Shoes": 1, "Pants": 3 };
 		  
 		  var total = totalCost(cart);
 		 
 	
 	function addCartItem (itemName) {
-		var totalCoast;
+		var totalCost;
 	}
-		</script>
+    
+
+ 
+/* =========== DRAWS A CART ============ */
+
+
+ function showItem(name, quantity, price) {
+    var item = $("<div class='item'>");
+    
+    item.append( $("<div class='name'>").text(name) );
+    item.append( $("<div class='price'>").text(quantity + " X $" + price + "=") );
+    item.append( $("<div class='subtotal''>").text("$" + (quantity * price)) );    
+    
+    $(".cart").append(item);
+  }
+  
+  showItem("Shirt",5,20);
+  showItem("Shoes",2,10);
+  showItem("Pants",2,40);
+
+
+
+
+
+
+var cart = { "Shirt": 2, "Hat": 1, "Pants": 3 };
+  
+  var total = totalCost(cart);
+ 
+
+
+/* =========== ALERT NOTIFYING ADDED ITEM ============ */
+
+  $(".add").click(function() {
+    var item = $(this).data("item");
+    alert("Added a " + item);
+  });
+
+
+
+
+});
+
+
+</script>
 
 
 
@@ -39,9 +87,14 @@
 
 <body>
 
-<button onclick="alert(total);">Add Shirt</button>
-<button onclick="alert(total);">Add Hat</button>
-<button onclick="alert(total);">Add Pants</button>
+ <button class='add' data-item="Shirt">Add Shirt to Cart</button>
+ <button class='add' data-item="Pants">Add Pants to Cart</button>
+ <button class='add' data-item="Shoes">Add Shoes to Cart</button>
+
+
+
+  
+  <div class="cart"></div>
 
 </body>
 

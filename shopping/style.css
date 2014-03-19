@@ -52,28 +52,6 @@ table {
 
 
 
-body {background-color: #fff;
-	  width:100%;
-	  background: url('images/slider1.jpg'),
-	   			  url('images/bluebg.jpg'), 
- 				  
-	   			  url('images/bluebg.jpg');
-
-	  background-repeat: no-repeat,
-	  					 no-repeat,
-	  				
-	  					 no-repeat;
-
-	  background-position: 0px 0px,
-	                       0px 820px,
-	                
-	                       0px 2750px;
-
-
-	   max-width: 960px;
-  	   margin: 0 auto;
-  	}
-
 p {font-family: 'Open Sans', sans-serif;
    font-size: 1.2em;
    color:white;}
@@ -264,13 +242,113 @@ blockquote {
 /* =================== DETAIL PAGE ==================== */
 
 #left {
+	background-color: #fff;
 	width: 50%;
+	float: left;
+}
+
+#main-item {
+	margin-top: 10%;
 }
 
 
 #right {
+	background-color: #fff;
 	width: 50%;
+	float: right;
+	margin-top: 15%;
 }
+
+h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	color: #5cb2d4;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 24px;
+}
+
+#type h3 {
+	color: #6d7475;
+}
+
+#type p {
+	font-family: 'Open Sans:300', sans-serif;
+	text-transform: uppercase;
+	font-size: 14px;
+	color:#6d7475;
+	letter-spacing: 1px;
+	margin-bottom: 10%;
+	margin-top: 10%;
+}
+
+h4 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	color: #6d7475;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-size: 12px;
+	margin-bottom: 2%;
+}
+
+#info {
+	margin-top: 30%;
+}
+
+#info p {
+	color: #6d7475;
+	font-size: 14px;
+	line-height: 1.5em;
+	margin-top: 10%;
+	padding-right: 20%;
+	margin-bottom: 25%;
+}
+
+select {
+	margin-top: 5%;
+}
+
+#options {
+	width: 30%;
+	float: left;
+}
+
+#size {
+	width: 30%;
+	float: left;
+}
+
+#add-to-cart {
+	margin-top: 25%;
+}
+
+#add-to-cart p {
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 15px;
+	margin: 0% 0 0 22%;
+	padding-top: 9%;
+}
+
+#button {
+	width: 200px;
+    height: 50px;
+    background: #5cb2d4;
+    position: relative;
+    -moz-border-radius:    10px;
+   	-webkit-border-radius: 10px;
+  	border-radius:         10px;
+}
+
+
+#thumbnails {
+	margin: 30%;
+}
+
+
 
 
 
