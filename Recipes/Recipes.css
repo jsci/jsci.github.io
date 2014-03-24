@@ -1,0 +1,190 @@
+//        VALIDATING BASIC HTML
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+              <meta charset="utf-8" />
+              <title>My Page Title</title>
+              <link href="styles.css" rel="stylesheet" media="all" /> <!-- Optional Site Styles -->
+              <script src="site.js"></script> <!-- Optional Site Javascript -->
+            </head>
+            <body>
+              <!-- Your Content Here -->
+            </body>
+            </html> 
+
+
+
+//        CENTERING CONTENT
+
+          body {
+            margin:0 auto;
+            width:960px;
+          }
+
+
+//        CSS ANIMATIONS
+
+          /* Define the keyframe */
+          @-webkit-keyframes bounce {
+             0% { -webkit-transform: translate(0,0); }
+             50%  { -webkit-transform: translate(225px,350px); }
+             100% {  -webkit-transform: translate(450px, 0); }
+          }
+
+          /* This is the element that we apply the animation to. */
+          .ball {
+             -webkit-animation-name: bounce;
+             -webkit-animation-duration: 1s;
+             -webkit-animation-timing-function: ease; /* default ease, (also: linear) */
+             -webkit-animation-delay: 1s;             /* default 0 */
+             -webkit-animation-iteration-count: 3;    /* default 1 (also: infinite) */
+             -webkit-animation-direction: alternate;  /* default normal */
+          }
+          /* or */
+          .ball {
+            -webkit-animation: bounce 1s ease 1s 3 alternate;
+          }
+
+
+//        FOR THE LOOP
+
+           //for(initial;condition;increment)
+                for(var i=0;i<100;i++) {
+                  ... 
+                }
+
+//        CREATING AN ARRAY
+
+
+          // Square brackets, comma's between values, strings in quotes
+             var myArray = [ "A", "B", 3 ];
+
+
+
+
+//        ARRAY LENGTH
+
+           var myArray = [ "A", "B", 3 ];
+             
+             // name of array .length (no parenthesis) 
+             alert(myArray.length); // alerts 3
+
+
+
+//        ACCESSING VALUE FROM ARRAY
+
+          var myArray = [ "A", "B", 3 ];
+             
+             // use square brackets with number in between
+             // starts at 0 for first element
+             alert(myArray[1]); // alerts B
+
+
+
+
+//        LOOPING AN ARRAY
+
+          var myArray = [ "A", "B", 3 ];
+             
+             for(var i = 0; i < myArray.length; i++) {
+                var item = myArray[i];
+                
+                // do something with the item
+                alert(item);
+             }   
+
+
+//        CREATING AN OBJECT
+
+             // JSON notation, curly brackets, strings in quotes, colon between key and value
+               var myObj = {
+                  "firstName": "Frank",
+                  "lastName":  "Johnson",
+                  "position":  "Owner"
+               };
+
+
+
+//        ACCESSING A VALUE FROM AN OBJECT
+
+            var myObj = {
+                  "firstName": "Frank",
+                  "lastName":  "Johnson",
+                  "position":  "Owner"
+               };
+               
+               // can use square bracket syntax with string (same as Array) OR dot syntax
+               alert( myObj["firstName"] ); // alerts Frank
+               alert( myObj.lastName ); // alerts Johnson
+
+
+//        INITIALIZING VALUE TO ZERO
+
+            var cart = { }
+
+               var item = "Shoe";
+               
+               if(!cart[item]) { cart[item] = 0; }
+               cart[item] += 1;
+
+
+//        LOOPING OVER AN OBJECT
+
+             var myObj = {
+                  "firstName": "Frank",
+                  "lastName":  "Johnson",
+                  "position":  "Owner"
+               };
+               
+               
+               // Special for loop, create variable to hold the key
+               for(var key in myObj) {
+                 // Lookup the value from the object
+                 var value = myObj[key];
+                 
+                 alert(key + ":" + value);
+               }
+
+
+//        BASIC
+
+        $("h1").remove();
+
+//        HTML
+
+        $("h1").html("Here's some HTML");
+
+
+//        HIDE
+
+        $("h1").hide();
+
+//        SHOW
+
+        $("h1").show();
+
+//        ADD/REMOVE CLASS
+
+        .addClass
+        .removeClass
+
+//        EMPTY
+
+        .empty
+
+//        ADDING HTML to EXISTING ELEMENT
+
+        .append
+
+
+//        EXECUTING JAVASCRIPT AFTER
+
+        <script>
+        $(function() {
+          // JavaScript to run
+          $("button").text("Changed!");
+        });
+        </script>
+           
+        <button>Original</button>
