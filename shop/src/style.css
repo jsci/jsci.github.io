@@ -50,15 +50,51 @@ table {
 /* End of Reset */
 
 
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('OpenSans/opensans-regular-webfont.eot');
+    src: url('OpenSans/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('OpenSans/opensans-regular-webfont.woff') format('woff'),
+         url('OpenSans/opensans-regular-webfont.ttf') format('truetype'),
+         url('OpenSans/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
-p {font-family: 'Open Sans', sans-serif;
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('OpenSans/opensans-bold-webfont.eot');
+    src: url('OpenSans/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('OpenSans/opensans-bold-webfont.woff') format('woff'),
+         url('OpenSans/opensans-bold-webfont.ttf') format('truetype'),
+         url('OpenSans/opensans-bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('OpenSans/opensans-light-webfont.eot');
+    src: url('OpenSans/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('OpenSans/opensans-light-webfont.woff') format('woff'),
+         url('OpenSans/opensans-light-webfont.ttf') format('truetype'),
+         url('OpenSans/opensans-light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+p {font-family: 'open_sansregular', sans-serif;
    font-size: 1.2em;
    color:white;}
 	                      
 a {
 	color:#50add2;
 	text-decoration: none;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'open_sansregular', sans-serif;
 	font-size: 16px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -70,6 +106,7 @@ header {width: 100%;}
 .header-bar {
 	position: fixed;
 	left:0px;
+	height:75px;
 	z-index: 50000;
 	background-color: #fff;
 	opacity: .97;
@@ -80,11 +117,11 @@ header {width: 100%;}
 }
 
 .header {
-height: 80px;
+height: 75px;
 }
 
 .name a {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'open_sansregular', sans-serif;
 	font-size: 11px;
 	text-transform: uppercase;
 	float: left;
@@ -104,7 +141,7 @@ li {
 }
 
 nav li a {
-	font-size: 14px;
+	font-size: 12px;
 	letter-spacing: 3px;
 }
 
@@ -122,9 +159,11 @@ h1 {padding-top:1%;
 	letter-spacing: 3px;
 	line-height: 1.15em;
 	color:white;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'open_sansregular', sans-serif;
 	text-transform: uppercase;
-	text-align: left;}
+	text-align: left;
+	opacity: .6;
+}
 
 h2 {color: white;
 	font-family: georgia, serif;
@@ -189,21 +228,6 @@ blockquote {
 	margin-bottom: 50%;
 }
 
-
-.filler {
-	padding: 40% 30% 30% 30%;
-}
-
-.filler p {
-	color: #000;
-	text-transform: uppercase;
-	font-size: 14px;
-	letter-spacing: 2.5px;
-	line-height: 1.5em;
-	text-align: center;
-	margin-bottom: 50%;
-}
-
 #about {
 	position: absolute;
 	top: 2750px;
@@ -229,7 +253,7 @@ blockquote {
 		text-transform: uppercase;}
 
 
-#contact a {font-family: 'Open Sans', sans-serif;
+#contact a {font-family: 'open_sansregular', sans-serif;
 		text-decoration: none;
 		color:#fff;
 		opacity: .75;}	
@@ -237,6 +261,17 @@ blockquote {
 
 
 /* =================== DETAIL PAGE ==================== */
+
+#cart {
+	position: fixed;
+	top: 15%;
+	right: 4.5%;
+	font-family: 'open_sanslight', sans-serif;
+	text-transform: uppercase;
+	font-size: 12px;
+	color:#6d7475;
+	letter-spacing: 1.5px;
+}
 
 #left {
 	background-color: #fff;
@@ -256,8 +291,8 @@ blockquote {
 	margin-top: 15%;
 }
 
-h3 {
-	font-family: 'Open Sans', sans-serif;
+#detail-price {
+	font-family: 'open_sansbold', sans-serif;
 	font-weight: bold;
 	color: #5cb2d4;
 	letter-spacing: 2px;
@@ -269,8 +304,8 @@ h3 {
 	color: #6d7475;
 }
 
-#type p {
-	font-family: 'Open Sans:300', sans-serif;
+#detail-type {
+	font-family: 'open_sanslight', sans-serif;
 	text-transform: uppercase;
 	font-size: 14px;
 	color:#6d7475;
@@ -280,7 +315,7 @@ h3 {
 }
 
 h4 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'open_sansbold', sans-serif;
 	font-weight: bold;
 	color: #6d7475;
 	letter-spacing: 1px;
@@ -321,7 +356,7 @@ select {
 }
 
 #add-to-cart p {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'open_sansregular', sans-serif;
 	color: #fff;
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -343,6 +378,34 @@ select {
 
 #thumbnails {
 	margin: 30%;
+}
+
+.overlay {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  background-color:black;
+  opacity:0.5;
+  display: none;
+  z-index:10;
+}
+
+.details {
+  position:fixed;
+  left:0px;
+  right:0px;
+  top:0px;
+  bottom:0px;
+  margin:auto;
+  width:700px;
+  height:500px;
+  background-color:white;
+  padding:20px 50px;
+  border-radius:10px;
+  display: none;
+  z-index: 15;
 }
 
 
