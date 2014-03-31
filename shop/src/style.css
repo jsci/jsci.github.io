@@ -135,9 +135,12 @@ height: 75px;
 	margin-top: 30px;
 }
 
+#main-nav ul li {
+	margin-right: 50px;
+}
+
 li {
 	display: inline-block;
-	margin-right: 50px;
 }
 
 nav li a {
@@ -182,7 +185,7 @@ h2 {color: white;
 }
 
 #quote p {
-	font-family: 'Georgia', serif;
+	font-family: Georgia, serif;
 	font-style: italic;
 	font-size: 24px;
 	letter-spacing: .45px;
@@ -236,6 +239,7 @@ blockquote {
 }
 
 #about p {
+	font-family: Georgia, serif;
 	line-height: 1.5em;
 	letter-spacing: .45px;
 	margin-top: 5%;
@@ -265,7 +269,7 @@ blockquote {
 #cart {
 	position: fixed;
 	top: 15%;
-	right: 4.5%;
+	right: 300px;
 	font-family: 'open_sanslight', sans-serif;
 	text-transform: uppercase;
 	font-size: 12px;
@@ -286,8 +290,9 @@ blockquote {
 
 #right {
 	background-color: #fff;
-	width: 50%;
+	width: 45%;
 	float: right;
+	padding-left: 5%;
 	margin-top: 15%;
 }
 
@@ -295,7 +300,7 @@ blockquote {
 	font-family: 'open_sansbold', sans-serif;
 	font-weight: bold;
 	color: #5cb2d4;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	text-transform: uppercase;
 	font-size: 24px;
 }
@@ -307,11 +312,21 @@ blockquote {
 #detail-type {
 	font-family: 'open_sanslight', sans-serif;
 	text-transform: uppercase;
-	font-size: 14px;
+	font-size: 13px;
 	color:#6d7475;
-	letter-spacing: 1px;
+	letter-spacing: 1.5px;
 	margin-bottom: 10%;
 	margin-top: 10%;
+}
+
+#detail-title {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	color: #5cb2d4;
+	letter-spacing: 2px;
+	line-height: 1.3em;
+	text-transform: uppercase;
+	font-size: 24px;
 }
 
 h4 {
@@ -320,7 +335,7 @@ h4 {
 	color: #6d7475;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	font-size: 12px;
+	font-size: 11px;
 	margin-bottom: 2%;
 }
 
@@ -344,15 +359,17 @@ select {
 #options {
 	width: 30%;
 	float: left;
+	margin: 0% 10% 4% 0%;
 }
 
 #size {
 	width: 30%;
 	float: left;
+	margin: 0% 10% 4% 0%;
 }
 
 #add-to-cart {
-	margin-top: 25%;
+	margin-top: 35%;
 }
 
 #add-to-cart p {
@@ -394,13 +411,14 @@ select {
 
 .details {
   position:fixed;
+  overflow: scroll;
   left:0px;
   right:0px;
-  top:0px;
+  top:50px;
   bottom:0px;
   margin:auto;
   width:700px;
-  height:500px;
+  height:100%;
   background-color:white;
   padding:20px 50px;
   border-radius:10px;

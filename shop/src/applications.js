@@ -1,20 +1,21 @@
 // Write our base functions
 
 function showProduct (collection) {
-       $(".overlay").show();
-       $(".details").show();
+       $(".overlay").fadeIn("slow");
+       $(".details").fadeIn("slow");
         var clothing = Collections[collection];
+
        $("#collection-title").text(clothing.name);
        $("#detail-title").text(clothing.title);
        $("#detail-description").text(clothing.description);
        $("#detail-price").text("$" + clothing.price);
        $("#detail-type").text(clothing.type);
        $("#main-item").attr("src", clothing.image);
-   }
+     }
 
 function hideProduct () {
-       $(".overlay").hide();
-       $(".details").hide();
+       $(".overlay").fadeOut("slow");
+       $(".details").fadeOut("slow");
    }
 
 
@@ -24,8 +25,7 @@ function hideProduct () {
 $(function() {
 
    $(".product").click(function(){
-    console.log("click function");
-    var collection = $(this).data("product-id");
+    var collection = $(this).data("product-id")
     showProduct(collection);
    });
 
