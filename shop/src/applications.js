@@ -10,7 +10,7 @@ function showProduct (collection) {
        $("#detail-description").text(clothing.description);
        $("#detail-price").text("$" + clothing.price);
        $("#detail-type").text(clothing.type);
-       $("#main-item").attr("src", clothing.image);
+       $("#detail-image").attr("src", clothing.image);
      }
 
 function hideProduct () {
