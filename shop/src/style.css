@@ -259,6 +259,7 @@ blockquote {
 	font-size: 12px;
 	color:#6d7475;
 	letter-spacing: 2px;
+	cursor:pointer;
 }
 
 #left {
@@ -354,6 +355,7 @@ select {
 
 #add-to-cart {
 	margin-top: 35%;
+	cursor:pointer;
 }
 
 #add-to-cart p {

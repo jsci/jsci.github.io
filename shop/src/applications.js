@@ -1,3 +1,7 @@
+var cart = {};
+
+var total = 0; 
+
 // Write our base functions
 
 function checkOut() {
@@ -5,13 +9,19 @@ function checkOut() {
   var stripeKey = 'pk_test_V0SJ6QOh3rXO9s6Ysw0eHzzE';
 
   var description = $("#cart").text();
-  var amount = updateCart() * 100;
+  var amount = total * 100;  
 
   var handler = StripeCheckout.configure({
     key: stripeKey,
     image: 'http://jsci.github.io/shop/images/scissors-icon.png',
     token: function(token, args) {
-      
+      $.post("/buy", {
+        token: token.id,
+        amount: amount,
+        description: description
+      },function(data) {
+        alert(data.message);
+      });
     }
   });
 
@@ -50,8 +60,6 @@ function hideProduct () {
        $("#add-to-cart").off("click");
    }
 
-var cart = {};
-
 
 function addItem (collection,quantity) {
           if(!cart[collection]) { cart[collection] = 0; }
@@ -62,7 +70,7 @@ function addItem (collection,quantity) {
 
 
 function updateCart (){
-  var total = 0;
+      total = 0;  
 
       for(var collection in cart) {
           var quantity = cart[collection];
