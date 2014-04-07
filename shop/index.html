@@ -2,52 +2,30 @@
 <html>
 
  <head>
-<title>One Page Shopping</title>
+<title>Studio</title>
     <link rel="stylesheet" href="src/style.css" type="text/css" media="screen" />
     <script src="http://code.jquery.com/jquery-1.11.0.js"></script>
     <script src='src/collections.js'></script>
     <script src='src/applications.js'></script>
+    <script src="src/smooth-scroll.js"></script>
 
-<style>
-
-    body {background-color: #fff;
-      width:100%;
-      background: url('images/slider1.jpg'),
-                  url('images/bluebg.jpg'), 
-                  
-                  url('images/bluebg.jpg');
-
-      background-repeat: no-repeat,
-                         no-repeat,
-                    
-                         no-repeat;
-
-      background-position: 0px 0px,
-                           0px 820px,
-                    
-                           0px 2750px;
-
-
-       max-width: 960px;
-       margin: 0 auto;
-    }
-
-</style>
+    <script src="https://checkout.stripe.com/checkout.js"></script>
 
  </head>
-
 
 <body>
 
 <header>
 <div class="container header">
     <div class="header-bar">
-          <div class="name"><a href="#home">studio</a></div>
+          <div class="name">
+              <a data-scroll href="#home">Studio</a></div>
         <nav id="main-nav">
           <ul> 
-            <li><a href="#collections">Collections</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a data-scroll href="#collections">Collections</a></li>
+            <li><a data-scroll href="#about">About</a></li>
+            <li><a data-scroll href="#contact">Contact Us</a></li>
+            <li><span id="cart">Cart (0)</span></li>
           </ul> 
         </nav> 
       </div>
@@ -57,7 +35,9 @@
 
 <div id="mainsite-container">
 
-<section id="home" >
+<div id="home"></div>
+
+<section id="home-content">
     <h1>A new collection derived from geometric shapes and contemporary art from traditional culture.</h1>
 </section>
 
@@ -109,21 +89,16 @@
 <div class='overlay'></div>
     <div class='details'>
 
-<section id="cart">
-Cart (0)
-</section>
 
 
 <section id="left">
     <article id="detail-img"><img id="detail-image" src="images/main-item.jpg" alt=""/></article>
 
     <article id="info">
-        <h4 id="collection-title">Contemporary Collection</h4>
-        <h3 id="detail-title">14SS Poly Satin Jacket</h3>
+    
         <p id="detail-description">A fitted Jacket featuring artwork with gouache and pen work digitally printed on white poly satin.</p>
 
-        <h4>Size &amp; Fabric</h4>
-        <p>Dry Clean Only, Poly 95%</p>
+
     </article>
 
 </section>
@@ -132,18 +107,18 @@ Cart (0)
 
 <section id="right">
     <article id="type">
+        <h4 id="collection-title">Contemporary Collection</h4>
+        <h5 id="detail-title">14SS Poly Satin Jacket</h5>
         <h3 id="detail-price">$250</h3>
         <p id="detail-type">Y/B Multi</p>
     </article>
 
     <article id="options">
         <h4>Quantity:</h4>
-        <select>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
+        <select id="detail-quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
         </select>
     </article>
 
@@ -189,6 +164,12 @@ Cart (0)
             <p>00 W 21st St. </p>
             <p>New York, NY 10001</p>
             <a href="mailto:hello@site.com">hello@site.com</a>
+
+
+<script>
+    smoothScroll.init();
+</script>
+
           </footer>
       
 
