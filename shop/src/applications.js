@@ -9,7 +9,7 @@ function checkOut() {
 
   var handler = StripeCheckout.configure({
     key: stripeKey,
-    image: 'http://jsci.github.io/shop/images/scissors.png',
+    image: 'http://jsci.github.io/shop/images/scissors-icon.png',
     token: function(token, args) {
       
     }
