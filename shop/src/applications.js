@@ -2,7 +2,7 @@ var cart = {};
 
 var total = 0; 
 
-// Write our base functions
+// stripe
 
 function checkOut() {
 
@@ -33,6 +33,7 @@ function checkOut() {
 
 }
 
+// base functions
 
 function showProduct (collection) {
        $(".overlay").fadeIn("slow");
