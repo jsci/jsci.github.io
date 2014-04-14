@@ -104,7 +104,7 @@ img {
 	position: relative;
 	top:-45px;
 	height: 10px;
-	margin-left: 3px;
+	margin-left: 9px;
 }
 
 #detail {
@@ -113,9 +113,7 @@ img {
 	right:0px;
 	top:0px;
 	bottom:0px;
-	margin: auto;
-	width: 400px;
-	height: 500px;
+	margin: 2.5% 18% 0% 18%;
 	display: none;
 	z-index: 2;
 }
@@ -139,12 +137,15 @@ img {
 	padding: 2% 4%;
 	line-height: 1.5em;	
 	z-index: 3;
-	opacity: 1;
+	opacity: .15
+}
+
+.postCaption:hover {
+   opacity: .8;
    transition: opacity .25s ease-in-out;
    -webkit-transition: opacity .25s ease-in-out;
 }
 
-.postFullImg:hover > .postCaption {
-	opacity: .5;
-}
+
+
 
