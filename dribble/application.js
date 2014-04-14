@@ -1,21 +1,22 @@
 // global
 var Shots;
 
-    
+
+	function showShot (shotIndex) {
+       var shot = Shots[shotIndex];
+ 	   $("#detail").fadeIn("slow");
+ 	   $("#close").fadeIn("slow");
+  	}
+
+
+  	function hideShot () {
+       $("#close").fadeOut("slow");
+       $("#detail").fadeOut("slow");
+
+    }
+
 
 $(function() {
-
-
-	    function createShot(shot) {
-      var title = $("<div>").text(shot.title);
-      
-      $("#shots").append(title);
-
-      shot.on("click",function() {
-        var img = $("<img>").attr("src",shot.image_teaser_url);
-        $("#detail").empty().append(img);
-      });
-    }
 
 
 		$.getJSON("http://api.dribbble.com/shots/popular?callback=?",function(data) {
@@ -40,11 +41,11 @@ $(function() {
 		      		post.append(name);
 
 		      		$("#shots").append(post);
-		      	
+		      	}
 
 		      		//detail
 		      		
-		    
+		      for(var i=0;i<Shots.length;i++) {
 
 		      		var full = $("<div class='postFull'>");
 		      		var caption = $("<div class='postCaption'>");
@@ -62,14 +63,17 @@ $(function() {
 
 		      		$("#detail").empty().append(full);
 
-		      	}
+			  }
 
 
-		      		for(var i=0;i<data.shots.length;i++) {
-        			createShot(data.shots[i]);      	
-      				}
+			$(".postImg").click(function(){
+		    var shotIndex = $(this).data("shot-index")
+		    showShot(shotIndex);
+		    });
 
-			 
+			$("#close").click(function(){
+    		hideShot();
+   		    });
 
 
 		});
