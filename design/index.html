@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+<title>Jessica Im</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <link href="showup.css" rel="stylesheet" media="all" />
+
+
+    <script src="http://code.jquery.com/jquery-1.11.0.js"></script>
+    <script src='js/Portfolio.js'></script>
+    <script src='js/application.js'></script>
+
+    <script src='js/smoothscroll.js'></script>
+    <script src='js/showup.js'></script>
+
+
+  <meta name='DESCRIPTION' content='Personal site of Jessica Im containing information and portfolio work of her as a designer.'/>
+  <meta name='KEYWORDS' content='Jessica Im, personal, portfolio, web, print, design, graphic design'/>
+
+
+ </head>
+
+<body>
+
+
+
+<div id="nav-hover"></div>
+  
+ <nav class="navigation navbar">
+  
+  <section class="nav-links">
+    <ul class="nav-elements">
+      <li class="logo-container"><a data-scroll href="#intro-image"><img id="logo" src="images/logo.png" alt="italic atlantic logo"></a></li>
+      <li><a data-scroll href="#home">Home</a></li>
+      <li><a data-scroll href="#print">Print</a></li>
+      <li><a data-scroll href="#web">Web</a></li>
+      <li><a data-scroll href="#contact">Contact</a></li>
+      <li><a href="src/resume.pdf">Resume</a></li>
+    </ul>
+    
+  </section>
+  
+</nav>
+
+
+
+<section id="home" class="background-image">
+   
+   <article class="intro">
+    <img id="logo-header" src="images/header.png" alt="ji logo">
+    <h1 id="tagline">A personal site of Jessica Im containing her information and portfolio work.</h1>
+   </article>
+ 
+ </section>
+
+
+
+ <section id="print">
+   <div class="portfolio-content">
+    <h1 class="title">Print Work</h1>
+    <h2 class="subtitle">Typographic and Conceptual Design</h2>
+    
+   
+<div class="container">
+
+      <div class="item" data-project-id='euthanasia'>
+            <img src="images/print/euthanasia/thumbnail.jpg" alt="Euthanasia Book" >
+      </div>
+
+      <div class="item" data-project-id='honestby'>
+            <img src="images/print/honestby/thumbnail.jpg" alt="Honest by" >
+      </div>
+
+
+      <div class="item" data-project-id='map'>
+            <img src="images/print/map/thumbnail.jpg" alt="Wayfinding Map" >
+      </div>
+
+ 
+       <div class="item" data-project-id='firstthingsfirst'>
+            <img src="images/print/firstthingsfirst/thumbnail.jpg" alt="First Things First" >
+      </div>
+
+
+      <div class="item" data-project-id='virtuesofdesign'>
+            <img src="images/print/virtuesofdesign/thumbnail.jpg" alt="Some Virtues of Design" >
+      </div>
+
+
+      <div class="item" data-project-id='recipecard'>
+            <img src="images/print/recipecard/thumbnail.jpg" alt="When Life Gives You Lemons" >
+      </div>
+
+</div>
+
+   </div>
+ </section>
+      
+
+
+
+
+<div class="interlude1 background-image">
+  <div class="interlude1-content">
+      <h3 class="interlude-title">title of something here</h3>
+    <div class="interlude-container">
+      
+something else here? inspiration??? idk...
+
+      </div>
+    </div>
+  </div>
+ </div>
+
+
+
+
+
+
+ <section id="web">
+   <div class="portfolio-content">
+
+    <h1 class="title">Web and Interface Work</h1>
+    <h2 class="subtitle">UX/UI Experience Design</h2>
+
+<div class="container">
+   
+
+   <div class="item" data-product-id='nautilus'>
+      <img src="images/shirts/naut.jpg" alt="Nautilus t-shirt" >
+    </div>
+
+
+    <div class="item" data-product-id='nautilus'>
+      <img src="images/shirts/naut.jpg" alt="Nautilus t-shirt" >
+    </div>
+
+
+
+    <div class="item" data-product-id='nautilus'>
+      <img src="images/shirts/naut.jpg" alt="Nautilus t-shirt" >
+      <div class="item-info">
+        <h2 class="price">$25</h2>
+        <h1 class="name">Nautilus</h1>
+        <h3 class="count">5/30</h3>
+      </div>
+    </div>
+   
+   
+
+</div>   
+    
+   </div>
+ </section>
+
+
+
+
+
+ <div class="interlude2 background-image">
+  <div class="interlude1-content">
+      <h3 class="interlude-title">inspiration</h3>
+
+    <div class="interlude-container">
+      <div class="quote">
+     &ldquo;I don&rsquo;t want to be a person with full hands, resting from dreams. But a person full of dreams, unable to rest his hands.&rdquo;
+    </div>
+
+     <h4 class="interlude-caption">&mdash;Lee Seon-Woong (&#xC774;&#xC120;&#xC6C5;)</h4></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- Project Container --> 
+
+<div class="overlay"></div>
+
+<div class="details">
+  
+  <section id="details-image">
+    <img id="detail-image" src="images/print/recipecard/01.jpg" alt="Image Detail">
+  </section>
+  
+  <section id="details-information">
+    <img id="detail-close" src="images/close.png" alt="close">
+    <h2 id='detail-title'>Project Title</h2>
+    <h2 id='detail-date'>Project Date</h2>
+     <h2 id='detail-description'>Project Date</h2>
+     
+  </section>
+
+</div>
+
+
+
+
+
+
+
+
+<section id="contact">
+   <div class="portfolio-content item-container">
+   
+    contact stuff goes here and whatnot
+    
+   </div>
+</section>
+
+<footer>
+  All work &amp; website designed and built by Jessica Im &copy; 2014
+</footer>
+
+
+<script>
+        $().showUp('#nav-hover');
+</script>
+
+<script>
+    smoothScroll.init();
+</script>
+
+</body>
+
+</html>
+
+

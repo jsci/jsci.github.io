@@ -1,0 +1,673 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-----------End of Reset-----------*/
+
+
+
+/*-----------NAVIGATION-----------*/
+
+
+
+nav {
+	width: 100%;
+	height: 66px;
+	background-color: white;
+	position: fixed;
+	box-shadow: 1px 0px 2px #414141;
+	opacity: .9;
+	z-index: 10;
+}
+
+
+#nav-hover {
+	width: 100%;
+	height: 66px;
+	position: fixed;
+	z-index: 9;
+}
+
+#logo {
+	margin: 0 auto;
+	display: block;
+	height: 30px;
+}
+
+.nav-links {
+	position: relative;	
+	top:25px;
+	width: 90%;
+	left:1.5em;
+}
+
+.nav-elements a {
+	font-family: Helvetica,sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	text-transform: uppercase;
+	color:#2f2f2f;
+	letter-spacing: 1px;
+}
+
+.nav-elements li {
+	position: relative;
+	float: left;
+	padding-left: 6em;
+}
+
+.nav-elements {
+	font-family: Helvetica,sans-serif;
+	font-size: 10px;
+	text-transform: uppercase;
+	text-align: center;
+	color:#b2b2b2;
+}
+
+#cart {
+	position: relative;
+	float:right;
+	text-align: center;
+	top:-21px;
+	padding: 14px 1.5em 1em 1.8em;
+}
+
+#cart:hover{
+	background: #e5e5e5;
+}
+
+#cart img {
+	position: relative;
+	display: inline-block;
+	top:3px;
+	right: 10px;
+	opacity: .3;
+}
+
+#cargo {
+	font-family: Helvetica,sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	text-transform: uppercase;
+	color:#2f2f2f;
+	letter-spacing: 1px;
+}
+
+#total-price {
+	font-family: Helvetica,sans-serif;
+	font-size: 14px;	
+	color:#b2b2b2;
+	line-height: 10px;
+}
+
+
+a {
+	text-decoration:none;
+}
+
+/*-----------PREFACE-----------*/
+
+
+.background-image {
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+	z-index: -1;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+#home{	
+	background-image:url('images/preface-background.jpg');	
+	
+}
+
+.intro {
+	position:relative;
+	width: 30em;
+	height: auto;
+	margin: 0 auto;
+	top:9.5em;
+}
+
+.intro img {
+	position: relative;
+	margin: 0 auto;
+	display: block;
+}
+
+#ia-type {
+	padding-top: 1em;
+	padding-bottom: 2em;
+}
+
+#logo-header {
+	padding-top: 3em;
+	padding-bottom: 3em;
+	height: 50px;
+}
+
+#tagline{
+	font-family: Helvetica,sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	color:#ffffff;
+	letter-spacing: 3px;
+	line-height: 1.5em;
+	text-align: center;
+	padding-bottom: 4em;
+}
+
+
+
+/*-----------PRINT WORK-----------*/
+
+
+
+#print {
+	position: relative;
+	height: 800px;
+	width: 100%;
+	background-color: white;
+	background-color: white;
+	margin: 0 auto;
+}
+
+.portfolio-content {
+	position: relative;
+	width: 90%;
+	margin: 0 auto;
+	top:4em;
+}
+
+
+.title {
+	font-family: Helvetica,sans-serif;
+	font-size: 20px;
+	text-align: center;
+	color:#2f2f2f;
+	padding-bottom: .7em;
+}
+
+.subtitle {
+	font-family: Helvetica,sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 1px;
+	color:#959595;
+	padding-bottom: 2em;
+}
+
+#captain {
+	position: relative;
+	margin: 0 auto;
+	display: block;
+	width: 7em;
+}
+
+.column-container{
+	position: relative;
+	width: 38em;
+	margin: 0 auto;
+	top:2em;
+	clear: both;
+	left:2em;	
+}
+
+p {
+	font-family: Helvetica,sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	color:#686868;
+}
+
+.column {
+	position: relative;
+	width: 16em;
+	float: left;
+	padding-right:5%;
+}
+
+
+/*-----------INTERLUDE 1-----------*/
+
+
+
+.interlude1 {
+	background-image:url('images/interlude1.jpg');	
+	height: 500px;
+}
+
+.interlude1-content {
+	position: relative;
+	top:7em;
+}
+
+.interlude-title {
+	font-family: Helvetica,sans-serif;
+	font-size: 12px;
+	text-align: center;
+	color:#ffffff;
+	padding-top: 1em;
+	padding-bottom: .7em;
+	letter-spacing: 1px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.interlude-caption {
+	font-family: Helvetica,sans-serif;
+	font-size: 12px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color:#ffffff;
+}
+
+.interlude-container {
+	position: relative;
+	width: 50em;
+	height: 100px;
+	margin: 0 auto;
+	top:4em;
+	letter-spacing: 1px;
+	text-align: center;	
+}
+
+.knot {
+	position: relative;
+	float: left;
+	padding: .72em;
+}
+
+/*------------WEB WORK------------*/
+
+#web {
+	position: relative;
+	height: 1070px;
+	width: 100%;
+	background-color: white;
+	margin: 0 auto;
+	}
+
+.column1 {
+	margin: 0 auto;
+	width: 85%;
+}
+
+.chapter-photo {
+	width: 80%;
+	padding-bottom: 1em;
+	display: block;
+	margin: 0 auto;
+}
+
+.item {
+	position: relative;
+	float: left;
+	margin: 2%;
+	width: 25%;
+	display: block;
+}
+
+.item img {
+	border: 5px solid white;
+	width: 100%;
+}
+
+/* .item-info {
+	position: relative;
+	height: 3em;
+	width: 100%;
+	background: white;
+	top:-10px;
+	border: 5px solid white;
+}
+*/
+
+.price {
+	position: relative;
+	font-family: Helvetica,sans-serif;
+	font-size: 16px;
+	float: left;
+	top: 16px;
+	left: 20px;
+}
+
+.name {
+	position: absolute;
+	font-family: Helvetica,sans-serif;
+	font-size: 14px;
+	float: left;
+	text-align: center;
+	top: 20px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.count {
+	position: relative;
+	font-family: Helvetica,sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	float: right;
+	top: 22px;
+	letter-spacing: 1px;
+	text-align: right center;
+	right: 20px;
+	
+}
+
+
+
+/*-----------INTERLUDE 2-----------*/
+
+
+
+.interlude2 {
+	background-image:url('images/interlude2.jpg');	
+	height: 500px;
+}
+
+.quote {
+	padding-bottom: 2em;
+	padding-top: 2em;
+	color: white;
+	text-align: center;
+	line-height: 1.7em;
+	width: 35em;
+	height:auto;
+	margin: 0 auto;
+	font-family: Helvetica,sans-serif;
+	font-size: 12px;
+	letter-spacing: 1px;
+
+}
+
+
+/*-----------CONTACT INFO-----------*/
+
+#contact {
+	position: relative;
+	height: 1000px;
+	width: 100%;
+	background-color: white;
+	clear: both;
+	background-color: white;
+	
+}
+
+
+
+/*-----------CONCLUSION-----------*/
+
+.conclusion-image{	
+	background-image:url('images/preface-background.jpg');	
+	height: 500px;
+}
+
+.conclusion {
+	position: relative;
+	width: 30em;
+	height: auto;
+	margin: 0 auto;
+	top:170px;
+}
+
+.waves {
+	display: block;
+	margin: 0 auto;
+}
+
+.anchor {
+	display: block;
+	margin: 0 auto;
+}
+
+/*-----------CONCLUSION-----------*/
+
+footer {
+	margin: 0 auto;
+	text-align: center;
+	font-family: Helvetica,sans-serif;
+	font-size: 9px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin: 5em;
+}
+
+
+/*-----------PRODUCT DETAIL-----------*/
+
+.overlay {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  opacity: .8;
+  background-color: #686868;
+  display: none;
+}
+
+.details {
+  position:fixed;
+  left:0px;
+  right:0px;
+  top:40px;
+  bottom:0px;
+  margin:auto;
+  width:900px;
+  height:550px;
+  background-color: white;
+  z-index: 2;
+  -webkit-transition: top 5s;
+  display: none;
+}
+
+
+.hide {
+	display: none;
+	-webkit-trasition: all 0.5s ease;	
+}
+
+#details-image {
+	position: relative;
+	width: 45%;
+	height: 100%;
+	float: left;
+	left: 2.5%;
+}
+
+#detail-image {
+  position:absolute;
+  left:0px;
+  right:0px;
+  top:0px;
+  bottom:0px;
+  margin:auto;
+  height: 90%;
+}
+
+#details-information {
+	position: relative;
+	width: 45%;
+	height: 100%;
+	float: right;
+	right: 2.5%;
+	height: 90%;
+	top:5%
+}
+
+#detail-close {
+	position: relative;
+	float: right;
+	right:.5em;
+}
+
+#detail-title {
+	position: relative;
+	font-family: Helvetica, sans-serif;
+	font-size: 22px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	top:2em;
+	color:#414141;
+}
+
+#detail-designer {
+	position: relative;
+	font-family: Helvetica, serif;
+	font-size: 12px;
+	text-align: center;
+	top:5.5em;
+	color:#797979;
+}
+
+#detail-count {
+	position: relative;
+	font-family: Helvetica, sans-serif;
+	font-size: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color:#797979;
+	padding: 1em;
+}
+
+#count {
+	position: relative;
+	top:7em;
+}
+
+.detail-dash {
+	height: 3px;
+	width: 3.5em;
+	background: #cdcdcd;
+	margin: 0 auto;
+}
+
+#selectors {
+	position: relative;
+	margin: 0 auto;
+	top:10em;
+	width: 80%;
+}
+
+select {
+	width: 40%;
+	margin: 4%;
+	padding: 12px 10px 10px 12px; 
+	border: 0;
+	border-radius: 8px;
+	-webkit-appearance: none;
+	background: #cdcdcd;
+	font-family: Helvetica, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 12px;
+	background: url('../images/drop-down-arrow.png') no-repeat right #ddd;
+}
+
+#detail-price {
+	position: relative;
+	font-family: Helvetica, sans-serif;
+	font-size: 22px;
+	text-align: center;
+	letter-spacing: 1px;
+	color:#414141;
+	top: 10em;
+}
+
+#add-to-cart {
+	position: relative;
+	font-family: Helvetica, sans-serif;
+	font-size: 10px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	background: #414141;
+	width: 10em;
+	text-align: center;
+	color:white;
+	padding: 12px 10px 10px 10px;
+	border-radius: 10px;
+	margin: 0 auto;
+	top:24em;
+}
+
+#limited {
+	position: relative;
+	position: relative;
+	font-family: Helvetica, serif;
+	font-size: 12px;
+	text-align: center;
+	font-style: italic;
+	top:22em;
+	color:#797979;
+}
+
+
+.container {
+	margin-left: 10%;
+}
+
+
+
+.single-column {
+	position: relative;
+	width: 25%;
+	float: left;
+	margin: 2%;
+}
