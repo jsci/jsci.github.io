@@ -70,6 +70,13 @@ h1 {
 	margin-top: 4%;
 }
 
+p {
+	position: absolute;
+	top: 850px;
+	margin-left: 12%;
+	color:#ea4c89;
+}
+
 .tooltop {
 	position: absolute;
 	background-color: white;
