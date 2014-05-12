@@ -1,0 +1,32 @@
+<!-- displays avatar pictures -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Scatter Plot</title>
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+        
+    </head>
+    <body>
+        <script>
+        function renderGraph(data) {
+            console.log(data)
+
+            var imgs = d3.select("body").selectAll("img")
+
+            imgs.data(data)
+                .enter()
+                .append("img")
+                .attr('src',function(player) {return player.avatar_url;} );
+                        
+
+        }
+        </script>
+
+        <script src="http://design-trends.herokuapp.com/players.js?limit=100&callback=renderGraph"></script>
+
+        
+    </body>
+</html>
+

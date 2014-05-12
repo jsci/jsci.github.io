@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Data Visualization</title>
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+        
+    </head>
+    <body>
+        <script>
+        function renderGraph(data) {
+            console.log(data);
+            data = data.slice(2);
+
+            data = data.filter(function(d) {
+                return d.location && d.latitude;
+            })
+
+
+            var svg = d3.select("body").append("svg")
+                                        .attr("width", 1000)
+                                        .attr("height", 800)
+
+            var xScale = d3.scale.linear(),
+                yScale = d3.scale.linear();
+
+            var maxlatitude = d3.max(data, function(d) {return d.latitude }),
+                maxlongitude = d3.max(data, function(d) {return d.longitude });
+
+
+            xScale.range([100, 800])
+                  .domain([0, maxlatitude])
+
+            yScale.range([750, 100])
+                  .domain([0, maxlongitude])
+
+
+            svg.selectAll("circle")
+                .data(data)
+                .enter()
+                .append("circle")
+                .attr("r",8)
+                .attr("cx", function(d) {return xScale (d.latitude); })
+                .attr("cy", function(d) {return yScale (d.longitude); });
+                        
+            var xAxis = d3.svg.axis()
+                          .scale(xScale)
+                          .orient("bottom");
+
+            svg.append("g")
+                .attr("class", "axis")
+                .attr("transform","translate(0,750)")
+                .call(xAxis);
+
+
+            var yAxis = d3.svg.axis()
+                          .scale(yScale)
+                          .orient("left");
+
+            svg.append("g")
+                .attr("class", "axis")
+                .attr("transform","translate(100,0)")
+                .call(yAxis);
+
+        }
+
+        </script>
+
+        <script src="http://design-trends.herokuapp.com/players.js?limit=500&callback=renderGraph"></script>
+
+        
+    </body>
+</html>
+
