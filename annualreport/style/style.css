@@ -1,0 +1,279 @@
+/* === CSS RESET === */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* === End of CSS RESET === */
+
+
+body {
+	color: #a0cd56;
+	font-size: 18px;
+	font-family: "Dolly", serif;
+	overflow: hidden;
+}
+
+h1 {
+	font-size: 75px;
+	font-weight: bold;
+	line-height: 1.5em;
+	background-color: #a0cd56;
+	padding: 2px;
+	margin: 0 10px 0 10px;
+}
+
+a, a:visited {
+	color: #fff;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+a:hover {
+	color: #AAA;
+}
+
+a:active {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 2px dotted;
+	transition: color 0.2s;
+}
+
+.big {
+	display: block;
+	background-color: #a0cd56;
+	color:#fff;
+	padding: 5px 20px 5px 20px;
+	font-size: 45px;
+	font-weight: regular;
+	line-height: 1.3em;
+	margin-bottom: 10px;
+}
+
+.wrapper div {
+	position: absolute;
+}
+
+.settings, nav {
+	position: fixed;
+	z-index: 9999999;
+	bottom: 0;
+	background: rgba(10,10,10, 0.5);
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-size: 20px;
+
+}
+
+.settings {
+	right: 0;
+	padding: 10px 20px;
+	border-radius: 10px 0 0 0;
+	display: none;
+}
+
+.settings a {
+	border: none;
+}
+
+nav {
+	left: 0;
+	border-radius: 0 10px 0 0;
+	padding-right: 20px;
+	padding-bottom: 5px;
+}
+
+nav li {
+	float: left;
+}
+
+nav a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	text-align: center;
+	transition: 0.25s;
+}
+
+nav li:last-child a {
+	border-radius: 0 10px 0 0;
+}
+
+nav a:hover {
+	background: rgba(15,15,15, 0.5);
+}
+
+.logo {
+	font-family: "Auto 1 SmCp" sans-serif;
+	letter-spacing: .75px;
+	text-transform: uppercase;
+	background-color: #fff;
+	position: fixed;
+	top: -5px;
+	right: -5px;
+	width: 300px;
+	height: 50px;
+	border: solid 5px #a0cd56;
+	padding: 40px 20px 10px 20px;
+	z-index: 12000000000;
+	text-align: center;
+}
+
+.navigator {
+	position: fixed;
+	top: 30px;
+	left: 30px;
+	background-color: #fff;
+	z-index: 10000;
+	overflow: hidden;
+	padding: 10px;
+	border: 1px solid #aaa;
+	-webkit-box-shadow: 2px 2px 5px rgba(50, 50, 50, 0.50);
+	box-shadow: 2px 2px 5px rgba(50, 50, 50, 0.50);
+}
+
+.navigator img {
+	width: 200px;
+}
+
+#box {
+	  z-index: 50000;
+	  background-color: #93bb50;
+	  opacity: .7;
+	  position: absolute;
+	  top: 45px;
+	  left:105px;
+	  height: 35px;
+	  width: 50px;
+	  display: none;
+}
+
+.sp-canvas {
+	display: none;
+}
+
+.arrow {
+	position: relative;
+	display: inline-block;
+}
+
+.home { 
+	width: 1000px;
+}
+
+.description {
+	top: 700px;
+	left:-100px;
+}
+
+.description img {
+	width: 1500px;
+}
+
+.description > span {
+	position: absolute;
+	top:20px;
+	left:500px;
+}
+
+.syntax {
+	top: 750px;
+	left: 1600px;
+	width: 800px;
+}
+
+.syntax > span {
+	z-index: 1000;
+	position: absolute;
+	left:-800px;
+	top: 900px;
+}
+
+.scrollbar {
+	top: 1250px;
+	left: 1300px;
+	width: 500px;
+}
+
+.rotations {
+	left: 1800px;
+	top: -300px;
+	width: 460px;
+}
+
+
+.source {
+	left: 2100px;
+	top: -1400px;
+	width: 1000px;
+}
+
+.source img {
+	margin-bottom: 100px;
+}
+
+.big {
+	width:350px;
+}
+
+.content{
+	top:-1100px;
+	left:-700px;
+	width:2500px;
+}
+
+.follow {
+	width: 475px;
+	left: 1100px;
+	top: -950px;
+}
+
+.follow .big {
+	font-size: 40px;
+}
+
+.highlight {
+	animation: highlight 0.2s alternate 6 ;
+}
+
+@keyframes point-down {
+	from {
+		top: 0;
+	}
+	to {
+		top: 5px;
+	}
+}
+
+@keyframes highlight {
+	to {
+		background: lightblue;
+	}
+}
