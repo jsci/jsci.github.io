@@ -64,6 +64,16 @@ a:active {
 	transition: color 0.2s;
 }
 
+header > a {
+	color:#a0cd56;
+	text-decoration: none;
+}
+
+header > a:visited {
+	color:#a0cd56;
+	text-decoration: none;
+}
+
 .big {
 	display: block;
 	background-color: #a0cd56;
@@ -147,11 +157,11 @@ nav a:hover {
 }
 
 .navigator {
+	background-color: #fff;
 	position: fixed;
 	top: 30px;
 	left: 30px;
-	background-color: #fff;
-	z-index: 10000;
+	z-index: 900000;
 	overflow: hidden;
 	padding: 10px;
 	border: 1px solid #aaa;
@@ -164,7 +174,7 @@ nav a:hover {
 }
 
 #box {
-	  z-index: 50000;
+	  z-index: 500000;
 	  background-color: #93bb50;
 	  opacity: .7;
 	  position: absolute;
@@ -223,7 +233,7 @@ nav a:hover {
 }
 
 .rotations {
-	left: 1800px;
+	left: 2000px;
 	top: -300px;
 	width: 460px;
 }
@@ -247,16 +257,18 @@ nav a:hover {
 	top:-1100px;
 	left:-700px;
 	width:2500px;
+	z-index: 100000;
 }
 
 .follow {
-	width: 475px;
 	left: 1100px;
 	top: -950px;
+	z-index: 200000;
 }
 
 .follow .big {
 	font-size: 40px;
+	width:400px;
 }
 
 .highlight {

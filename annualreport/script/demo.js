@@ -24,9 +24,9 @@ function init() {
 			name: "scrollbar"
 		})
 		// Arc up while rotating
-		.lineTo(1800, 1000, 600, {name: "rotations"})
+		.lineTo(500, 1200, 600, {name: "rotations"})
 		// Line to 'rotations'
-		.lineTo(2400, 750, {
+		.lineTo(1900, 850, {
 			name: "rotations"
 		})
 		
